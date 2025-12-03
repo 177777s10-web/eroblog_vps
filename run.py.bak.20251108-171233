@@ -1,0 +1,186 @@
+# -*- coding: utf-8 -*-
+import os, sys, csv, json, datetime, urllib.request, urllib.parse as up
+from pathlib import Path
+
+BASE = Path(__file__).resolve().parent         # ~/eroblog
+OUT  = BASE / "out" / "items"
+JSONL= BASE / "out" / "videoc_latest_enriched.jsonl"
+CSVFP= BASE / "out" / "videoc_latest.csv"
+HIST = BASE / "out" / "processed_cids.txt"
+API_HOST = "https://api.dmm.com/affiliate/v3/ItemList"
+
+# 親(ホーム)と自身を import パスへ
+if str(BASE.parent) not in sys.path: sys.path.insert(0, str(BASE.parent))
+if str(BASE) not in sys.path: sys.path.insert(0, str(BASE))
+
+from eroblog.common.util import run_cmd, filter_sample_urls
+from eroblog.merge.rules import merge as merge_rules
+
+def get_api_keys():
+    aid = os.environ.get("API_ID") or "nAguP939XQHSFhANAPC9"
+    aff = os.environ.get("AFFILIATE_ID") or "shinya39-995"
+    if not aid or not aff:
+        raise RuntimeError("APIキー未設定")
+    return aid, aff
+
+def api_latest_cids(limit=200):
+    import urllib.request as ur, urllib.parse as up, json
+    aid, aff = get_api_keys()
+    base = {"api_id":aid, "affiliate_id":aff, "output":"json", "sort":"date", "hits":100}
+    def fetch(params):
+        url = API_HOST + "?" + up.urlencode({k:v for k,v in params.items() if v})
+        try:
+            with ur.urlopen(url, timeout=20) as r:
+                j = json.loads(r.read().decode("utf-8","replace"))
+            return (j.get("result") or {}).get("items") or []
+        except Exception:
+            return None
+
+    out, seen = [], set()
+
+    # A) 第一候補: FANZA/digital/floor=videoc
+    items = fetch({**base, "site":"FANZA", "service":"digital", "floor":"videoc"})
+    if items:
+        for it in items:
+            cid = it.get("cid")
+            if cid and cid not in seen:
+                out.append(cid); seen.add(cid)
+            if len(out) >= limit: return out[:limit]
+
+    # B) フォールバック: floor無しから /amateur/ を含むURLのみ採用
+    items2 = fetch({**base, "site":"FANZA", "service":"digital"})
+    if items2:
+        for it in items2:
+            cid = it.get("cid")
+            url = it.get("URL") or it.get("url") or ""
+            if cid and ("/amateur/" in url) and cid not in seen:
+                out.append(cid); seen.add(cid)
+                if len(out) >= limit: return out[:limit]
+
+    
+    # 0件ならHTMLフォールバック（/amateur/の新着を直読み）
+    if not out:
+        import urllib.request as ur, urllib.error as ue
+        urls = [
+            "https://video.dmm.co.jp/amateur/-/list/=/sort=date/",
+            "https://video.dmm.co.jp/amateur/-/list/=/sort=ranking/"
+        ]
+        seen_html=set()
+        for u in urls:
+            try:
+                with ur.urlopen(u, timeout=20) as r:
+                    html = r.read().decode("utf-8","replace")
+                # id=xxxxxx を拾う（英数字のみ）
+                for cid in re.findall(r"id=([0-9a-z]+)", html, flags=re.I):
+                    if cid not in seen and cid not in seen_html:
+                        out.append(cid); seen_html.add(cid)
+                    if len(out) >= limit: break
+            except Exception:
+                pass
+            if len(out) >= limit: break
+    return out[:limit]
+
+def load_history():
+    if not HIST.exists(): return set()
+    return {l.strip() for l in HIST.read_text(encoding="utf-8").splitlines() if l.strip()}
+
+def append_history(cid: str):
+    HIST.parent.mkdir(parents=True, exist_ok=True)
+    with HIST.open("a", encoding="utf-8") as f: f.write(cid + "\n")
+
+def pick_unseen(nth=1):
+    hist = load_history()
+    cands = api_latest_cids(limit=max(200, nth))
+    unseen = [c for c in cands if c not in hist]
+    if not unseen:
+        print(f"[DEBUG] candidates={len(cands)} history={len(hist)}")
+        return None
+    nth = max(1, nth)
+    return unseen[nth-1] if len(unseen) >= nth else unseen[-1]
+    nth = max(1, nth)
+    return unseen[nth-1] if len(unseen) >= nth else unseen[-1]
+
+def api_fetch_by_cid(cid: str):
+    cmd = f'{sys.executable} {BASE/"api/fetch_by_cid.py"} --cid "{cid}"'
+    return json.loads(run_cmd(cmd))
+
+def probe_scrape(cid: str):
+    url = f"https://video.dmm.co.jp/amateur/content/?id={cid}"
+    js  = run_cmd(f'{sys.executable} {BASE/"scrape/videoc_probe.py"} "{url}"')
+    d   = json.loads(js)
+    try:
+        OUT.mkdir(parents=True, exist_ok=True)
+        (OUT / f"{cid}_probe_pw.json").write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding="utf-8")
+    except:
+        pass
+    return d
+
+def samples_via_pattern(cid: str):
+    base = f"https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/{cid}/{cid}js-"
+    return [f"{base}{i:03d}.jpg" for i in range(1,11)]
+
+def write_jsonl_row(d: dict):
+    JSONL.parent.mkdir(parents=True, exist_ok=True)
+    with JSONL.open("a", encoding="utf-8") as w:
+        w.write(json.dumps(d, ensure_ascii=False) + "\n")
+
+def write_csv_row(d: dict):
+    CSVFP.parent.mkdir(parents=True, exist_ok=True)
+    headers = ["cid","title","genres","maker","series","performers_count","name","label","sizes","poster_url","sample_movie_url","affiliate_url","review_len","images_count","ts_iso"]
+    new = not CSVFP.exists()
+    with CSVFP.open("a", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=headers)
+        if new: w.writeheader()
+        w.writerow({
+            "cid": d.get("cid"),
+            "title": d.get("title"),
+            "genres": " / ".join(d.get("genres") or []),
+            "maker": d.get("maker"),
+            "series": d.get("series"),
+            "performers_count": len(d.get("performers") or []),
+            "name": d.get("name"),
+            "label": d.get("label"),
+            "sizes": d.get("sizes") or d.get("sizes_text"),
+            "poster_url": d.get("poster_url"),
+            "sample_movie_url": d.get("sample_movie_url"),
+            "affiliate_url": d.get("affiliate_url"),
+            "review_len": len((d.get("review_body") or d.get("review") or d.get("description") or "")),
+            "images_count": len(d.get("sample_images") or []),
+            "ts_iso": datetime.datetime.now().astimezone().isoformat(timespec="seconds"),
+        })
+
+def main():
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--auto", action="store_true")
+    ap.add_argument("--auto_index", type=int, default=1)
+    ap.add_argument("--cids")
+    args = ap.parse_args()
+
+    if not args.auto and not args.cids:
+        args.auto = True
+    if args.auto:
+        cid = pick_unseen(args.auto_index)
+        if not cid:
+            print("[INFO] 未処理の販売中新着が見つからなかったため終了"); sys.exit(0)
+        cids = [cid]
+    else:
+        cids = [c.strip() for c in args.cids.split(",") if c.strip()]
+
+    JSONL.write_text("", encoding="utf-8")
+    if CSVFP.exists(): CSVFP.unlink()
+
+    for cid in dict.fromkeys(cids):
+        print(f"[RUN] CID={cid}")
+        api = api_fetch_by_cid(cid) or {}
+        probe = probe_scrape(cid)
+        enriched = merge_rules(api, probe, samples_via_pattern(cid), sample_filter=filter_sample_urls)
+        write_jsonl_row(enriched)
+        write_csv_row(enriched)
+        append_history(cid)
+        print(f"[OK] merged: {cid} images={len(enriched.get('sample_images') or [])} review_len={len((enriched.get('review_body') or ''))}")
+
+    print("[DONE] JSONL:", JSONL, " CSV:", CSVFP, " HIST:", HIST)
+
+if __name__ == "__main__":
+    main()

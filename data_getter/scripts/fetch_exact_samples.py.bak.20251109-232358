@@ -1,0 +1,131 @@
+# -*- coding: utf-8 -*-
+import argparse, json, time
+from urllib.parse import urlparse
+from playwright.sync_api import sync_playwright, TimeoutError
+
+BASE = "https://video.dmm.co.jp/amateur/content/?id={cid}"
+UA   = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0 Safari/537.36"
+
+def build_url(cid, url_opt): return url_opt or BASE.format(cid=cid)
+def norm(u): return u.split("?")[0].split("#")[0]
+
+def agree_age(page):
+    try:
+        for sel in ['text=同意する','text=はい','text=I Agree']:
+            b = page.locator(sel).first
+            if b.count():
+                b.click(timeout=1500)
+                page.wait_for_load_state("domcontentloaded")
+                break
+    except: pass
+
+def open_sample_tab(page):
+    for sel in ["a:has-text('サンプル画像')","button:has-text('サンプル画像')",
+                "a:has-text('サンプル')","button:has-text('サンプル')"]:
+        try:
+            loc = page.locator(sel).first
+            if loc.count():
+                loc.click(timeout=1500)
+                time.sleep(0.5)
+                break
+        except: pass
+
+def lazy_scroll(page, steps=24, pause=320):
+    h0 = 0
+    for _ in range(steps):
+        page.mouse.wheel(0, 1200)
+        time.sleep(pause/1000)
+        try:
+            h1 = page.evaluate("() => document.body.scrollHeight")
+            if h1 == h0: break
+            h0 = h1
+        except: pass
+
+def pick_from_dom(page):
+    urls = set()
+    try:
+        handles = page.locator("img").element_handles()
+        for h in handles:
+            try:
+                src = h.get_attribute("src")
+                if src: urls.add(src)
+                srcset = h.get_attribute("srcset") or ""
+                for part in srcset.split(","):
+                    t = part.strip().split(" ")[0]
+                    if t: urls.add(t)
+            except: pass
+    except: pass
+    return [norm(u) for u in urls]
+
+def pick_from_network(page):
+    urls = set()
+    try:
+        for req in page.context.requests:
+            try:
+                u = req.url
+                if any(ext for ext in (".jpg",".jpeg",".png",".webp") if u.lower().split("?")[0].endswith(ext)):
+                    urls.add(u)
+            except: pass
+    except: pass
+    return [norm(u) for u in urls]
+
+def og_fallback(page):
+    try:
+        u = page.locator('meta[property="og:image"]').first.get_attribute("content")
+        return norm(u) if u else None
+    except: return None
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--cid", required=True)
+    ap.add_argument("--url")
+    ap.add_argument("--out", required=True)
+    ap.add_argument("--headless", default="true")
+    ap.add_argument("--timeout", type=int, default=180000)
+    args = ap.parse_args()
+
+    target = build_url(args.cid, args.url)
+    headless = args.headless.lower() != "false"
+    timeout_ms = args.timeout
+
+    out = {"cid": args.cid, "url": target, "sample_images": [], "found": 0, "notes": []}
+
+    with sync_playwright() as p:
+        b = p.chromium.launch(headless=headless, args=["--lang=ja-JP","--no-sandbox","--disable-dev-shm-usage"])
+        ctx = b.new_context(user_agent=UA, storage_state="dmm_storage_state.json")
+        page = ctx.new_page()
+        try:
+            page.goto("https://video.dmm.co.jp/", wait_until="domcontentloaded", timeout=45000)
+        except: pass
+        agree_age(page)
+        try:
+            page.goto(target, wait_until="domcontentloaded", timeout=60000)
+        except TimeoutError:
+            page.goto(target, wait_until="domcontentloaded", timeout=60000)
+        open_sample_tab(page)
+        try:
+            page.wait_for_selector("img", timeout=min(timeout_ms, 20000))
+        except: pass
+        lazy_scroll(page, steps=30, pause=400)
+
+        dom = pick_from_dom(page)
+        net = pick_from_network(page)
+        all_urls = sorted(set(dom + net))
+        if not all_urls:
+            og = og_fallback(page)
+            if og: all_urls = [og]
+        out["sample_images"] = all_urls
+        out["found"] = len(all_urls)
+        out["notes"] = [f"dom={len(dom)}", f"net={len(net)}", ("fallback" if (not dom and not net) else "no_fallback"),
+                        f"engine=chromium", f"headless={headless}"]
+
+        open(args.out,"w",encoding="utf-8").write(json.dumps(out, ensure_ascii=False, indent=2))
+        try:
+            ctx.storage_state(path="dmm_storage_state.json")
+        except: pass
+        try:
+            ctx.close(); b.close()
+        except: pass
+
+if __name__ == "__main__":
+    main()

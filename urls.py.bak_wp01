@@ -1,0 +1,20 @@
+from django.contrib import admin
+from django.urls import path, include
+from django.contrib.sitemaps.views import sitemap
+
+from posts import views as post_views
+from posts.sitemaps import PostSitemap
+from posts.feeds import LatestPostsFeed
+
+sitemaps = {
+    "posts": PostSitemap,
+}
+
+urlpatterns = [
+    path('admin/', include('console.urls')),
+    path("admin/", admin.site.urls),
+    path("", post_views.post_list, name="home"),
+    path("post/<int:pk>/", post_views.post_detail, name="post_detail"),
+    path("sitemap.xml", sitemap, {"sitemaps": sitemaps}, name="sitemap"),
+    path("feed.xml", LatestPostsFeed(), name="rss_feed"),
+]

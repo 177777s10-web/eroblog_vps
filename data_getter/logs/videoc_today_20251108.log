@@ -1,0 +1,9 @@
+[RUN] CID=ntgg012
+[OK] merged: ntgg012 images=6 review_len=277
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[RUN] CID=smuc163
+[OK] merged: smuc163 images=5 review_len=1577
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[RUN] CID=oremo453
+[OK] merged: oremo453 images=5 review_len=67
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt

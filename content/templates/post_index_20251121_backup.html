@@ -1,0 +1,148 @@
+{# 素人ハメ撮り トップページ（一覧） #}
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>素人ハメ撮りレビュー一覧</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --primary-color: #ff4081;
+            --text-color: #333;
+            --muted-text: #777;
+            --card-bg: #ffffff;
+            --border-color: #f1f1f1;
+        }
+        body {
+            margin: 0;
+            padding: 24px 12px 40px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                         "Helvetica Neue", Arial, sans-serif;
+            background: #fafafa;
+            color: var(--text-color);
+        }
+        .page {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 26px;
+            margin: 0 0 8px;
+        }
+        .lead {
+            margin: 0 0 24px;
+            font-size: 14px;
+            color: var(--muted-text);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 16px;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            display: flex;
+            flex-direction: column;
+        }
+        .thumb {
+            position: relative;
+            padding-top: 60%;
+            overflow: hidden;
+        }
+        .thumb img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .body {
+            padding: 10px 14px 12px;
+            font-size: 13px;
+            line-height: 1.5;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        /* 名前＋サイズだけ（CIDは出さない） */
+        .meta-line {
+            font-size: 15px;
+            font-weight: 600;
+        }
+        .meta-line span.size {
+            margin-left: 6px;
+            font-weight: 700;
+            color: #ff4081;  /* ピンク */
+        }
+        .review {
+            font-size: 13px;
+            color: var(--text-color);
+        }
+        .review-clamp {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+        }
+        .empty {
+            margin-top: 24px;
+            font-size: 14px;
+            color: var(--muted-text);
+        }
+        a.card-link {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <h1>素人ハメ撮りレビュー一覧</h1>
+    <p class="lead">
+        取得済みデータから自動生成した素人ハメ撮りレビューの一覧です。気になる作品をクリックすると、詳細レビューへ移動します。
+    </p>
+
+    {% if posts %}
+        <div class="grid">
+            {% for post in posts %}
+                <a href="{% url 'post_detail' post.cid %}" class="card-link">
+                    <article class="card">
+                        <div class="thumb">
+                            {# ★ CID からローカル画像を決め打ち /media/{cid}_01.jpg #}
+                            <img src="/media/{{ post.cid }}_01.jpg" alt="{{ post.title }}">
+                        </div>
+                        <div class="body">
+                            <div class="meta-line">
+                                {% with dn=post.name|default:post.title %}
+                                    {{ dn }}
+                                {% endwith %}
+                                {% if post.bust and post.waist and post.hip %}
+                                    <span class="size">B{{ post.bust }} W{{ post.waist }} H{{ post.hip }}</span>
+                                {% elif post.sizes_text %}
+                                    <span class="size">{{ post.sizes_text }}</span>
+                                {% endif %}
+                            </div>
+                            <p class="review review-clamp">
+                                {% if post.review_body %}
+                                    {{ post.review_body|striptags|truncatechars:60 }}
+                                {% elif post.review %}
+                                    {{ post.review|striptags|truncatechars:60 }}
+                                {% else %}
+                                    {{ post.title }} のレビュー記事です。
+                                {% endif %}
+                            </p>
+                        </div>
+                    </article>
+                </a>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p class="empty">レビュー記事がありません。</p>
+    {% endif %}
+</div>
+</body>
+</html>

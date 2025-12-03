@@ -1,0 +1,183 @@
+【1. eroblog 全体の位置関係（問い合わせ・プライバシーを含む）】
+
+eroblog/
+├─ data_getter/              ← 自動取得レイヤー（FANZA からデータを取る）
+│   …（略：取得周り一式）
+│
+├─ content/                  ← 記事作業エリア（人が触るところ）
+│   ├─ drafts/               ← .md 下書き
+│   ├─ published/            ← 公開済みの写し
+│   ├─ templates/
+│   │   ├─ post_detail_template.html ← 記事詳細ページの本番テンプレ
+│   │   └─ post_index.html           ← 旧トップテンプレ（今は使わない）
+│   ├─ assets/               ← 記事用の元画像
+│   └─ exports/              ← latest.csv / latest.jsonl などの記事候補一覧
+│
+├─ blog_builder/             ← Django 本体（表示・管理）
+│   ├─ manage.py
+│   ├─ db.sqlite3            ← データベース本体
+│   ├─ .venv/                ← 仮想環境（バックアップ時は除外対象）
+│   ├─ blog_builder/
+│   │   ├─ settings.py       ← TEMPLATES / MEDIA_ROOT / URL など
+│   │   ├─ urls.py           ← /posts/ /posts/contact/ /posts/privacy/ などの入口
+│   │   ├─ asgi.py
+│   │   └─ wsgi.py
+│   └─ posts/
+│       ├─ models.py         ← Post モデル（記事の全項目）
+│       ├─ views.py          ← post_index / post_detail / contact / privacy
+│       ├─ urls.py           ← /posts/<cid>/ などのルーティング
+│       └─ templates/
+│           └─ post_index.html ← 現在実際に使われているトップページテンプレ
+│              contact.html     ← 問い合わせページ
+│              privacy.html     ← プライバシーポリシー
+│
+└─ media/                    ← Django が返す実画像
+    ├─ hhl152_01.jpg
+    ├─ hhl152_poster.jpg
+    └─ …（cidごとの画像）
+
+
+【2. トップページが表示されるまで】
+
+1) ブラウザで /posts/ にアクセス
+   URL 例:
+   http://127.0.0.1:8000/posts/
+
+2) blog_builder/blog_builder/urls.py
+   from posts.views import post_index, post_detail, contact, privacy
+   path("posts/", post_index, name="post_index")
+   という形で post_index に振り分けている。
+
+3) blog_builder/posts/views.py の post_index 関数
+   - Post.objects.all().order_by("-release_date", "-id") で記事一覧を取る。
+   - Paginator(qs, 30) で 1ページ30件に分割。
+   - Post.objects.order_by("-view_total", "-id")[:30] で「人気順30件」を取得。
+   - context に
+       posts          → 一覧カード用
+       page_obj       → ページング用
+       popular_posts  → 右カラムの人気ランキング用
+     を入れて render している。
+
+   ざっくりイメージ：
+   qs = Post.objects.all().order_by("-release_date", "-id")
+   paginator = Paginator(qs, 30)
+   popular_posts = Post.objects.order_by("-view_total", "-id")[:30]
+   return render(request, "post_index.html", context)
+
+4) 使われるテンプレートファイル
+   実際に使われているのは
+   blog_builder/posts/templates/post_index.html
+   であることを Django の loader.get_template で確認済み。
+
+5) post_index.html の中身
+   - 上部のヘッダーで「無料素人ハメ撮り動画集」と表示。
+   - 左側：カードグリッド
+       {% for post in posts %} … {% endfor %}
+       で 1ページ30件分をカード表示。
+   - 右側：人気ハメ撮りランキング
+       {% for p in popular_posts %} … {% endfor %}
+       で view_total の大きい順に 1位〜 のラベルを振っている。
+   - フッター風ナビ部分で
+       ホーム → {% url "post_index" %}
+       お問い合わせ → {% url "contact" %}
+       プライバシーポリシー → {% url "privacy" %}
+     にリンクしている。
+
+
+【3. 記事詳細ページが表示されるまで】
+
+1) トップページやランキングから /posts/<cid>/ のリンクをクリック。
+   URL 例:
+   http://127.0.0.1:8000/posts/hhl152/
+
+2) blog_builder/posts/urls.py
+   path("posts/<str:cid>/", post_detail, name="post_detail")
+   などのルールで post_detail に振り分け。
+
+3) blog_builder/posts/views.py の post_detail 関数
+   - get_object_or_404(Post, cid=cid) で対象記事を取得。
+   - review / review_body を Markdown → HTML に変換して body_html にする。
+   - sizes / bust,waist,hip から seo_sizes を作る。
+   - /media/<cid>_01.jpg〜_05.jpg, /media/<cid>_poster.jpg を元に
+     sample_images, poster_url を組み立てる。
+   - ジャンルペア genre_pairs、メーカー別の他記事 same_maker_posts、
+     人気記事 popular_posts、他メーカー other_maker_blocks などを context にセット。
+   - 最後に
+       return render(request, "post_detail_template.html", context)
+     で content/templates/post_detail_template.html を使って描画。
+
+4) テンプレートファイル
+   記事詳細は app テンプレではなく
+   content/templates/post_detail_template.html
+   を直接使っている。
+   blog_builder/blog_builder/settings.py の TEMPLATES.DIRS に
+   /home/shinya/eroblog/content/templates
+   が入っているため、Django はここから post_detail_template.html を探す。
+
+
+【4. お問い合わせページが表示されるまで】
+
+1) トップページ右下ナビの「お問い合わせ」をクリック。
+   URL としては /posts/contact/ に飛んでいる。
+
+2) blog_builder/blog_builder/urls.py
+   from posts.views import contact
+   path("posts/contact/", contact, name="contact")
+   で contact 関数に振り分け。
+
+3) blog_builder/posts/views.py の contact 関数
+   def contact(request):
+       return render(request, "contact.html", {})
+   というシンプルな関数で、テンプレート contact.html を返している。
+
+4) blog_builder/posts/templates/contact.html
+   - サイトヘッダーはトップページと同じデザイン。
+   - 本文に「お問い合わせフォーム」の説明と注意書きを記載。
+   - 実際の送信先メールアドレスは画面には出さず、
+     サーバ側の送信処理（今後実装するときは settings_local.py 等）で
+     maxfst33@yahoo.ne.jp に飛ぶ想定。
+   - ページ下部に「トップページに戻る」リンクとして
+     {% url "post_index" %} を使っている。
+
+
+【5. プライバシーポリシーページが表示されるまで】
+
+1) トップページ右下ナビの「プライバシーポリシー」をクリック。
+   URL としては /posts/privacy/ に飛んでいる。
+
+2) blog_builder/blog_builder/urls.py
+   from posts.views import privacy
+   path("posts/privacy/", privacy, name="privacy")
+   で privacy 関数に振り分け。
+
+3) blog_builder/posts/views.py の privacy 関数
+   def privacy(request):
+       return render(request, "privacy.html", {})
+   というシンプルな関数で、テンプレート privacy.html を返している。
+
+4) blog_builder/posts/templates/privacy.html
+   - ヘッダーはトップページと同じ。
+   - 本文に
+       「個人情報の利用目的」
+       「広告配信について」
+       「アクセス解析ツールについて」
+       「外部サイトへのリンクについて」
+       「個人情報の第三者提供について」
+       「プライバシーポリシーの変更について」
+       「お問い合わせ窓口」
+     を整理して記載。
+   - 最下部に
+       <a href="{% url 'post_index' %}">トップページに戻る</a>
+     を設置。
+
+
+【6. バックアップの前提】
+
+この状態で「記事が壊れた時用バックアップ」を取るときの対象は
+  ・~/eroblog/data_getter 一式
+  ・~/eroblog/content 一式
+  ・~/eroblog/publish_queue 一式
+  ・~/eroblog/blog_builder 一式（db.sqlite3, views.py, templates を含む）
+  ・~/eroblog/media 一式
+となる。
+仮想環境 .venv はサイズが大きく再インストール可能なので tar からは除外する。

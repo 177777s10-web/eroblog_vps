@@ -1,0 +1,141 @@
+{% load static %}
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>素人ハメ撮りレビューまとめ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'posts/style_postlist.css' %}">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="site-header-inner">
+        <div class="site-logo">
+            <a href="/">素人ハメ撮りレビュー</a>
+        </div>
+
+        <form class="site-search" method="get" action=".">
+            <label class="sr-only" for="q">サイト内検索</label>
+            <input id="q" type="text" name="q" value="{{ request.GET.q }}" placeholder="キーワードを入力">
+            <button type="submit">検索</button>
+        </form>
+    </div>
+</header>
+
+<main class="layout">
+    <div class="layout-main">
+
+        <h1 class="page-title">最新素人ハメ撮りレビュー一覧</h1>
+
+        <section class="post-grid">
+            {% for post in page_obj.object_list %}
+                <article class="post-card">
+                    <a href="{{ post.get_absolute_url }}" class="post-card-link">
+                        <div class="post-card-thumb">
+                            {% with img=post.sample_image_files|first %}
+                                {% if img %}
+                                    <img src="{{ img }}" alt="{{ post.name|default:post.title }}" loading="lazy" referrerpolicy="no-referrer">
+                                {% endif %}
+                            {% endwith %}
+                        </div>
+
+                        <div class="post-card-body">
+                            <h2 class="post-card-title">
+                                {{ post.name|default:post.title }}
+                                {% if post.age %}
+                                    （{{ post.age }}）
+                                {% endif %}
+                            </h2>
+
+                            <p class="post-card-meta">
+                                {% if post.sizes_text %}
+                                    {{ post.sizes_text }} ｜
+                                {% endif %}
+                                {{ post.cid }}
+                            </p>
+
+                            <p class="post-card-excerpt">
+                                {% if post.review_html %}
+                                    {{ post.review_html|striptags|truncatechars:80 }}
+                                {% elif post.review %}
+                                    {{ post.review|truncatechars:80 }}
+                                {% else %}
+                                    本物の素人ハメ撮りレビューを掲載しています。
+                                {% endif %}
+                            </p>
+                        </div>
+                    </a>
+                </article>
+            {% empty %}
+                <p>記事がありません。</p>
+            {% endfor %}
+        </section>
+
+        {% if is_paginated %}
+            <nav class="pagination">
+                {% if page_obj.has_previous %}
+                    <a href="?page={{ page_obj.previous_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}" class="page-link">前へ</a>
+                {% endif %}
+
+                <span class="page-current">
+                    {{ page_obj.number }} / {{ page_obj.paginator.num_pages }}
+                </span>
+
+                {% if page_obj.has_next %}
+                    <a href="?page={{ page_obj.next_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}" class="page-link">次へ</a>
+                {% endif %}
+            </nav>
+        {% endif %}
+    </div>
+
+    <aside class="layout-sidebar">
+
+        <section class="sidebar-search">
+            <h2 class="sidebar-title">サイト内検索</h2>
+            <form method="get" action=".">
+                <label class="sr-only" for="side-q">キーワードを入力</label>
+                <input id="side-q" type="text" name="q" value="{{ request.GET.q }}" placeholder="キーワードを入力">
+                <button type="submit">検索</button>
+            </form>
+        </section>
+
+        <section class="sidebar-ranking">
+            <h2 class="sidebar-title">人気ハメ撮りランキング</h2>
+
+            {% if popular_posts %}
+                <ol class="ranking-list">
+                    {% for p in popular_posts %}
+                        <li class="ranking-item">
+                            <a href="{{ p.get_absolute_url }}" class="ranking-link">
+                                <div class="ranking-thumb">
+                                    {% with img=p.sample_image_files|first %}
+                                        {% if img %}
+                                            <img src="{{ img }}" alt="{{ p.name|default:p.title }}" loading="lazy" referrerpolicy="no-referrer">
+                                        {% endif %}
+                                    {% endwith %}
+                                </div>
+                                <div class="ranking-body">
+                                    <div class="ranking-order">{{ forloop.counter }}位</div>
+                                    <div class="ranking-title">
+                                        {{ p.name|default:p.title }}
+                                    </div>
+                                    <div class="ranking-meta">
+                                        {{ p.cid }}
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ol>
+            {% else %}
+                <p>人気記事を集計中です。</p>
+            {% endif %}
+        </section>
+
+    </aside>
+</main>
+
+</body>
+</html>

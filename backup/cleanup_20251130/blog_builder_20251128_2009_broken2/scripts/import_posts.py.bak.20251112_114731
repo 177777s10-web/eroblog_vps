@@ -1,0 +1,153 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+import re, json, sys
+from pathlib import Path
+
+BASE = Path(__file__).resolve().parents[1]  # blog_builder/
+CONTENT = BASE.parent / "content"           # eroblog/content
+DRAFTS = CONTENT / "drafts"
+PUB    = CONTENT / "published"
+
+# 行先頭の "*" や "-"、全角・半角コロン、** 太字 ** などを吸収して値を取る
+def _norm(s: str) -> str:
+    s = s.strip()
+    s = re.sub(r'^\s*[*\-・]\s*', '', s)             # 箇条書き頭
+    s = re.sub(r'^\*\*(.+?)\*\*', r'\1', s)          # **太字**
+    s = s.replace('：', ':')
+    return s.strip()
+
+def parse_markdown_file(md_path: Path) -> dict:
+    text = md_path.read_text(encoding="utf-8", errors="ignore")
+    lines = [ln.rstrip('\n') for ln in text.splitlines()]
+
+    name = maker = sizes = None
+    genres: list[str] = []
+    review_html = ""
+
+    # 単純な本文→HTML（最低限）
+    def _p(s: str) -> str:
+        return f"<p>{s}</p>" if s.strip() else ""
+
+    # 見出しや空行を除いた本文をレビューとして採用
+    body = []
+    for ln in lines:
+        if re.match(r'^\s{0,3}#{1,6}\s*', ln):
+            continue
+        if ln.strip() == '':
+            continue
+        body.append(ln)
+    review_html = ''.join(_p(x) for x in body[:40])  # 暫定40行まで
+
+    # フィールド抽出
+    for ln in lines:
+        raw = _norm(ln)
+
+        m = re.match(r'^(?:名前|name)\s*:\s*(.+)$', raw, re.I)
+        if m and not name:
+            name = m.group(1).strip()
+            continue
+
+        m = re.match(r'^(?:メーカー|maker)\s*:\s*(.+)$', raw, re.I)
+        if m and not maker:
+            maker = m.group(1).strip()
+            continue
+
+        # ジャンルは区切りを広く許容（、/ , ・ ｜ |）
+        m = re.match(r'^(?:ジャンル|genres?)\s*:\s*(.+)$', raw, re.I)
+        if m and not genres:
+            val = m.group(1)
+            parts = re.split(r'[、,/・\|｜\s]+', val)
+            genres = [p for p in (x.strip() for x in parts) if p]
+            continue
+
+        # サイズは Bxx/Wyy/Hzz 形式を許容（全角もOK）
+        m = re.search(r'B\s*([0-9]{2,3})\D+W\s*([0-9]{2,3})\D+H\s*([0-9]{2,3})', raw, re.I)
+        if m and not sizes:
+            sizes = f"B{m.group(1)}/W{m.group(2)}/H{m.group(3)}"
+            continue
+
+    return {
+        "name": name or "",
+        "maker": maker or "",
+        "genres": genres,
+        "sizes": sizes or "",
+        "review_html": review_html,
+        "manuscript_path": str(md_path.relative_to(BASE)),  # blog_builder からの相対
+    }
+
+def find_md(cid: str) -> Path | None:
+    # drafts → published の順で探索
+    patterns = [
+        f"*_{cid}_*.md",   # 日付_品番_タイトル.md
+        f"*_{cid}.md",
+        f"{cid}_*.md",
+        f"{cid}.md",
+    ]
+    for p in patterns:
+        for root in (DRAFTS, PUB):
+            hits = list(root.glob(p))
+            if hits:
+                return hits[0]
+    return None
+
+def main():
+    if len(sys.argv) < 2 or sys.argv[1] != "--cid":
+        print("Usage: import_posts.py --cid <CID> [--force]")
+        sys.exit(2)
+    cid = sys.argv[2].strip()
+    force = "--force" in sys.argv
+
+    # Django 起動
+    import os, django
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE","blog_builder.settings")
+    django.setup()
+    from posts.models import Post
+
+    try:
+        post = Post.objects.get(cid=cid)
+    except Post.DoesNotExist:
+        print(f"[ERR] DBに {cid} がありません")
+        sys.exit(1)
+
+    md = find_md(cid)
+    if not md or not md.exists():
+        print(f"[ERR] 原稿が見つかりません: drafts/ または published/ に {cid}*.md を置いてください")
+        sys.exit(1)
+
+    data = parse_markdown_file(md)
+    # 上書き条件
+    if force or not post.maker:   post.maker = data["maker"]
+    if force or not post.genres:  post.genres = data["genres"]
+    if force or not post.sizes:   post.sizes = data["sizes"]
+    if force or not post.name:    post.name = data["name"]
+    if force or not post.review_html: post.review_html = data["review_html"]
+    post.manuscript_path = data["manuscript_path"]
+
+    # MEDIA のサンプルを DB に反映（あれば）
+    from django.conf import settings
+    media = Path(getattr(settings, "MEDIA_ROOT", ""))
+    imgs = []
+    if media.exists():
+        poster = media / f"{cid}_poster.jpg"
+        if poster.exists(): imgs.append(f"/media/{cid}_poster.jpg")
+        for i in range(1, 11):
+            p = media / f"{cid}_{i:02d}.jpg"
+            if p.exists(): imgs.append(f"/media/{cid}_{i:02d}.jpg")
+    if imgs:
+        post.sample_images = imgs
+
+    post.save()
+    print(json.dumps({
+        "cid": cid,
+        "maker": post.maker,
+        "genres": post.genres,
+        "sizes": post.sizes,
+        "name": post.name,
+        "review_len": len(post.review_html or ""),
+        "images": len(post.sample_images or []),
+        "manuscript_path": post.manuscript_path,
+    }, ensure_ascii=False))
+    print("[OK] import_posts 完了")
+
+if __name__ == "__main__":
+    main()

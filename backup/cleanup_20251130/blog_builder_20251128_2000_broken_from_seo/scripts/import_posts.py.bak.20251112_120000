@@ -1,0 +1,154 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+import os, re, sys, json
+from pathlib import Path
+from html import unescape
+
+# パス
+THIS = Path(__file__).resolve()
+PROJ = THIS.parents[1]                  # blog_builder/
+ROOT = PROJ.parent                      # eroblog/
+CONTENT = ROOT / "content"
+DRAFTS = CONTENT / "drafts"
+PUB    = CONTENT / "published"
+
+# Django import 用パス通し
+if str(PROJ) not in sys.path:
+    sys.path.insert(0, str(PROJ))
+
+# 軽量マークダウン/HTML 正規化
+MD_LINK_RE = re.compile(r'\[([^\]]+)\]\([^)]+\)')
+HTML_TAG_RE = re.compile(r'<[^>]+>')
+def strip_md_html(s: str) -> str:
+    s = unescape(s)
+    s = HTML_TAG_RE.sub('', s)
+    s = MD_LINK_RE.sub(r'\1', s)
+    s = s.replace('**','').replace('__','').replace('`','')
+    return s
+
+def _norm(s:str)->str:
+    s = strip_md_html(s).strip()
+    s = re.sub(r'^\s*[*\-・>]\s*','', s)           # 箇条書き/引用頭
+    s = s.replace('：',':')
+    return s.strip()
+
+def parse_markdown(md:Path)->dict:
+    t = md.read_text(encoding='utf-8', errors='ignore')
+    lines = [ln.rstrip('\n') for ln in t.splitlines()]
+    name=maker=sizes=None; genres=[]
+
+    # 本文→簡易HTML
+    body=[]
+    for ln in lines:
+        if re.match(r'^\s{0,3}#{1,6}\s*', ln): 
+            continue
+        if not ln.strip(): 
+            continue
+        body.append(strip_md_html(ln))
+    review_html = ''.join(f'<p>{x}</p>' for x in body[:60])
+
+    for ln in lines:
+        r = _norm(ln)
+
+        m = re.match(r'^(?:名前|name)\s*:\s*(.+)$', r, re.I)
+        if m and not name:
+            name = m.group(1).strip(); continue
+
+        m = re.match(r'^(?:メーカー|maker)\s*:\s*(.+)$', r, re.I)
+        if m and not maker:
+            maker = m.group(1).strip(); continue
+
+        m = re.match(r'^(?:ジャンル|genres?)\s*:\s*(.+)$', r, re.I)
+        if m and not genres:
+            parts = re.split(r'[、,/・\|｜\s]+', m.group(1))
+            genres = [p for p in (x.strip() for x in parts) if p]; continue
+
+        # 途中にテキストがあっても拾えるように広めに
+        m = re.search(r'B\s*([0-9]{2,3})\D+W\s*([0-9]{2,3})\D+H\s*([0-9]{2,3})', r, re.I)
+        if m and not sizes:
+            sizes = f'B{m.group(1)}/W{m.group(2)}/H{m.group(3)}'; continue
+
+    draft_path = os.path.relpath(str(md), str(ROOT))  # eroblog 相対
+    return {'name':name or '', 'maker':maker or '', 'genres':genres,
+            'sizes':sizes or '', 'review_html':review_html, 'draft_path':draft_path}
+
+def find_md(cid:str)->Path|None:
+    pats = [f'*_{cid}_*.md', f'*_{cid}.md', f'{cid}_*.md', f'{cid}.md']
+    for pat in pats:
+        for root in (DRAFTS, PUB):
+            hits = list(root.glob(pat))
+            if hits: 
+                return hits[0]
+    return None
+
+def main():
+    if len(sys.argv)<3 or sys.argv[1] != '--cid':
+        print('Usage: import_posts.py --cid <CID> [--force]'); sys.exit(2)
+    cid = sys.argv[2].strip()
+    force = '--force' in sys.argv
+
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE','blog_builder.settings')
+    import django; django.setup()
+    from django.conf import settings
+    from posts.models import Post
+
+    try:
+        post = Post.objects.get(cid=cid)
+    except Post.DoesNotExist:
+        print(f'[ERR] DBに {cid} がありません'); sys.exit(1)
+
+    md = find_md(cid)
+    if not md or not md.exists():
+        print(f'[ERR] 原稿が見つかりません: drafts/ または published/ に {cid}*.md'); sys.exit(1)
+
+    data = parse_markdown(md)
+
+    def set_if(field, value):
+        if hasattr(post, field) and (force or not getattr(post, field)):
+            setattr(post, field, value)
+
+    set_if('name',   data['name'])
+    set_if('maker',  data['maker'])
+    set_if('genres', data['genres'])
+    set_if('sizes',  data['sizes'])
+    if hasattr(post,'review_html'):
+        set_if('review_html', data['review_html'])
+    elif hasattr(post,'review_body'):
+        set_if('review_body', re.sub(r'<[^>]+>','',data['review_html']))
+    elif hasattr(post,'review'):
+        set_if('review', re.sub(r'<[^>]+>','',data['review_html']))
+
+    if hasattr(post,'draft_path'):
+        post.draft_path = data['draft_path']
+    elif hasattr(post,'manuscript_path'):
+        post.manuscript_path = data['draft_path']
+
+    # MEDIA → sample_images（絶対パスで存在確認し、常に上書き可にする）
+    imgs=[]
+    media = Path(getattr(settings,'MEDIA_ROOT','') or '')
+    if media.exists():
+        poster = media / f'{cid}_poster.jpg'
+        if poster.exists(): imgs.append(f'/media/{cid}_poster.jpg')
+        for i in range(1,11):
+            p = media / f'{cid}_{i:02d}.jpg'
+            if p.exists(): imgs.append(f'/media/{cid}_{i:02d}.jpg')
+    if hasattr(post,'sample_images'):
+        if force or not getattr(post,'sample_images'):
+            post.sample_images = imgs
+
+    post.save()
+    out = {
+        'cid': cid,
+        'name': getattr(post,'name',''),
+        'maker': getattr(post,'maker',''),
+        'genres': getattr(post,'genres',[]),
+        'sizes': getattr(post,'sizes',''),
+        'review_len': len(getattr(post,'review_html','') or getattr(post,'review_body','') or getattr(post,'review','') or ''),
+        'images': len(getattr(post,'sample_images',[]) or []),
+        'path': getattr(post,'draft_path','') or getattr(post,'manuscript_path',''),
+        'MEDIA_ROOT': str(media),
+    }
+    print(json.dumps(out, ensure_ascii=False))
+    print('[OK] import_posts 完了')
+if __name__ == '__main__':
+    main()

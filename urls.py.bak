@@ -1,0 +1,17 @@
+from django.contrib import admin
+from django.urls import path
+from posts import views as post_views
+from django.conf import settings
+from django.conf.urls.static import static
+
+from django.urls import include, path
+urlpatterns = [
+    path('admin/posts/template_body/', template_body, name='admin_template_body'),
+    path("posts/", include("posts.urls")),
+    path("admin/", admin.site.urls),
+    path("<slug:slug>/", post_views.post_detail, name="post_detail"),
+]
+
+# --- 開発サーバで /samples/ を配信 ---
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

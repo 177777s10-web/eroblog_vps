@@ -1,0 +1,32 @@
+@@ -430,20 +430,20 @@
+                 <div class="review-excerpt">
+                     <span class="lead-rating">
+                         管理人のおすすめ度：
+                         <span class="rating-stars rating-5">★★★★★</span>
+                     </span>
+
+                     <h3 class="review-section-title" style="margin-top:0.6em;font-size:1.2em;color:#333;">
+                         {{ post.name|default:post.title }}{% if post.age %}({{ post.age }}){% endif %} の素人ハメ撮りを徹底レビュー
+                     </h3>
+
+-                    <span class="lead-main">
+-                        {% if post.review_html %}
+-                            {{ post.review_html|safe }}
+-                        {% elif post.review %}
+-                            <p>{{ post.review }}</p>
+-                        {% elif post.description %}
+-                            <p>{{ post.description }}</p>
+-                        {% endif %}
+-                    </span>
++                    <div class="lead-main">
++                        {% if post.review_html %}
++                            {{ post.review_html|safe }}
++                        {% elif post.review %}
++                            <p>{{ post.review }}</p>
++                        {% elif post.description %}
++                            <p>{{ post.description }}</p>
++                        {% endif %}
++                    </div>
+
+                     <span class="summary-block-more">続きはこちら</span>
+                 </div>

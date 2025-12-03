@@ -1,0 +1,122 @@
+[INFO] start batch N=30 -> /home/shinya/eroblog/content/exports/batch_20251109-000345
+[RUN] 1/30
+[RUN] CID=dpdx013
+[OK] merged: dpdx013 images=5 review_len=953
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[RUN] 2/30
+[RUN] CID=smjj093
+[OK] merged: smjj093 images=5 review_len=309
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[RUN] 3/30
+[RUN] CID=gesy084
+[OK] merged: gesy084 images=5 review_len=185
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[RUN] 4/30
+[RUN] CID=ppg026
+[OK] merged: ppg026 images=5 review_len=265
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[RUN] 5/30
+[RUN] CID=docs111
+[OK] merged: docs111 images=4 review_len=439
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[RUN] 6/30
+[RUN] CID=nost142
+[OK] merged: nost142 images=5 review_len=156
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[RUN] 7/30
+[RUN] CID=mrs0059
+[OK] merged: mrs0059 images=5 review_len=216
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[RUN] 8/30
+[RUN] CID=hmdnc878
+[OK] merged: hmdnc878 images=5 review_len=253
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[RUN] 9/30
+[RUN] CID=hcmn090
+[OK] merged: hcmn090 images=5 review_len=102
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[RUN] 10/30
+[RUN] CID=urutora212
+[OK] merged: urutora212 images=5 review_len=150
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[RUN] 11/30
+[RUN] CID=gerk669
+[OK] merged: gerk669 images=1 review_len=171
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[RUN] 12/30
+[RUN] CID=fan378
+[OK] merged: fan378 images=5 review_len=190
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[RUN] 13/30
+[RUN] CID=bini517
+[OK] merged: bini517 images=4 review_len=268
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[RUN] 14/30
+[RUN] CID=oremo452
+[OK] merged: oremo452 images=5 review_len=67
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[RUN] 15/30
+[RUN] CID=orecz327
+[OK] merged: orecz327 images=5 review_len=214
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[RUN] 16/30
+[RUN] CID=mrs0019
+[OK] merged: mrs0019 images=5 review_len=311
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[RUN] 17/30
+[RUN] CID=bini516
+[OK] merged: bini516 images=5 review_len=237
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[RUN] 18/30
+[RUN] CID=bini515
+[OK] merged: bini515 images=5 review_len=214
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[RUN] 19/30
+[RUN] CID=bini514
+[OK] merged: bini514 images=5 review_len=261
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[RUN] 20/30
+[RUN] CID=bini513
+[OK] merged: bini513 images=5 review_len=202
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[RUN] 21/30
+[RUN] CID=bini512
+[OK] merged: bini512 images=5 review_len=225
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[RUN] 22/30
+[RUN] CID=smul049
+[OK] merged: smul049 images=5 review_len=429
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[RUN] 23/30
+[RUN] CID=sekao193
+[OK] merged: sekao193 images=5 review_len=102
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[RUN] 24/30
+[RUN] CID=pcs012
+[OK] merged: pcs012 images=6 review_len=1012
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[RUN] 25/30
+[RUN] CID=gaga009
+[OK] merged: gaga009 images=5 review_len=1145
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[RUN] 26/30
+[RUN] CID=shinki238
+[OK] merged: shinki238 images=6 review_len=249
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[RUN] 27/30
+[RUN] CID=skho198
+[OK] merged: skho198 images=5 review_len=1069
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[RUN] 28/30
+[RUN] CID=bskc111
+[OK] merged: bskc111 images=6 review_len=537
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[RUN] 29/30
+[RUN] CID=orev145
+[OK] merged: orev145 images=5 review_len=318
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[RUN] 30/30
+[RUN] CID=peep071
+[OK] merged: peep071 images=5 review_len=392
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[DONE] JSONL lines: 30, CSV rows: 30

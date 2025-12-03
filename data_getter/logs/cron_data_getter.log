@@ -1,0 +1,2346 @@
+[RUN] CID=maj040
+Traceback (most recent call last):
+  File "/home/shinya/eroblog/data_getter/blog_videoc_today.py", line 328, in <module>
+    main()
+  File "/home/shinya/eroblog/data_getter/blog_videoc_today.py", line 279, in main
+    api   = api_one(cid) or {}
+            ^^^^^^^^^^^^
+  File "/home/shinya/eroblog/data_getter/blog_videoc_today.py", line 31, in api_one
+    js  = run(f'{sys.executable} fanza/api_fetch_by_cid.py --cid "{cid}"')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shinya/eroblog/data_getter/blog_videoc_today.py", line 27, in run
+    raise RuntimeError(f"cmd failed: {cmd}\n{p.stderr}")
+RuntimeError: cmd failed: /home/shinya/eroblog_project_GPT/.venv/bin/python fanza/api_fetch_by_cid.py --cid "maj040"
+[ERR] API_ID / AFFILIATE_ID が未設定
+
+[RUN] CID=maj040
+Traceback (most recent call last):
+  File "/home/shinya/eroblog/data_getter/blog_videoc_today.py", line 328, in <module>
+    main()
+  File "/home/shinya/eroblog/data_getter/blog_videoc_today.py", line 279, in main
+    api   = api_one(cid) or {}
+            ^^^^^^^^^^^^
+  File "/home/shinya/eroblog/data_getter/blog_videoc_today.py", line 31, in api_one
+    js  = run(f'{sys.executable} fanza/api_fetch_by_cid.py --cid "{cid}"')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shinya/eroblog/data_getter/blog_videoc_today.py", line 27, in run
+    raise RuntimeError(f"cmd failed: {cmd}\n{p.stderr}")
+RuntimeError: cmd failed: /home/shinya/eroblog_project_GPT/.venv/bin/python fanza/api_fetch_by_cid.py --cid "maj040"
+[ERR] API_ID / AFFILIATE_ID が未設定
+
+[RUN] CID=maj040
+Traceback (most recent call last):
+  File "/home/shinya/eroblog/data_getter/blog_videoc_today.py", line 328, in <module>
+    main()
+  File "/home/shinya/eroblog/data_getter/blog_videoc_today.py", line 279, in main
+    api   = api_one(cid) or {}
+            ^^^^^^^^^^^^
+  File "/home/shinya/eroblog/data_getter/blog_videoc_today.py", line 31, in api_one
+    js  = run(f'{sys.executable} fanza/api_fetch_by_cid.py --cid "{cid}"')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shinya/eroblog/data_getter/blog_videoc_today.py", line 27, in run
+    raise RuntimeError(f"cmd failed: {cmd}\n{p.stderr}")
+RuntimeError: cmd failed: /home/shinya/eroblog_project_GPT/.venv/bin/python fanza/api_fetch_by_cid.py --cid "maj040"
+[ERR] API_ID / AFFILIATE_ID が未設定
+
+[RUN] CID=smjx108
+Traceback (most recent call last):
+  File "/home/shinya/eroblog/data_getter/blog_videoc_today.py", line 359, in <module>
+    main()
+  File "/home/shinya/eroblog/data_getter/blog_videoc_today.py", line 310, in main
+    api   = api_one(cid) or {}
+            ^^^^^^^^^^^^
+  File "/home/shinya/eroblog/data_getter/blog_videoc_today.py", line 62, in api_one
+    js  = run(f'{sys.executable} fanza/api_fetch_by_cid.py --cid "{cid}"')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shinya/eroblog/data_getter/blog_videoc_today.py", line 58, in run
+    raise RuntimeError(f"cmd failed: {cmd}\n{p.stderr}")
+RuntimeError: cmd failed: /home/shinya/eroblog_project_GPT/.venv/bin/python fanza/api_fetch_by_cid.py --cid "smjx108"
+[ERR] API_ID / AFFILIATE_ID が未設定
+
+[RUN] CID=smjx108
+Traceback (most recent call last):
+  File "/home/shinya/eroblog/data_getter/blog_videoc_today.py", line 359, in <module>
+    main()
+  File "/home/shinya/eroblog/data_getter/blog_videoc_today.py", line 310, in main
+    api   = api_one(cid) or {}
+            ^^^^^^^^^^^^
+  File "/home/shinya/eroblog/data_getter/blog_videoc_today.py", line 62, in api_one
+    js  = run(f'{sys.executable} fanza/api_fetch_by_cid.py --cid "{cid}"')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shinya/eroblog/data_getter/blog_videoc_today.py", line 58, in run
+    raise RuntimeError(f"cmd failed: {cmd}\n{p.stderr}")
+RuntimeError: cmd failed: /home/shinya/eroblog_project_GPT/.venv/bin/python fanza/api_fetch_by_cid.py --cid "smjx108"
+[ERR] API_ID / AFFILIATE_ID が未設定
+
+[RUN] CID=tow034
+Traceback (most recent call last):
+  File "/home/shinya/eroblog/data_getter/blog_videoc_today.py", line 359, in <module>
+    main()
+  File "/home/shinya/eroblog/data_getter/blog_videoc_today.py", line 310, in main
+    api   = api_one(cid) or {}
+            ^^^^^^^^^^^^
+  File "/home/shinya/eroblog/data_getter/blog_videoc_today.py", line 62, in api_one
+    js  = run(f'{sys.executable} fanza/api_fetch_by_cid.py --cid "{cid}"')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shinya/eroblog/data_getter/blog_videoc_today.py", line 58, in run
+    raise RuntimeError(f"cmd failed: {cmd}\n{p.stderr}")
+RuntimeError: cmd failed: /home/shinya/eroblog_project_GPT/.venv/bin/python fanza/api_fetch_by_cid.py --cid "tow034"
+[ERR] API_ID / AFFILIATE_ID が未設定
+
+[RUN] CID=tow034
+Traceback (most recent call last):
+  File "/home/shinya/eroblog/data_getter/blog_videoc_today.py", line 359, in <module>
+    main()
+  File "/home/shinya/eroblog/data_getter/blog_videoc_today.py", line 310, in main
+    api   = api_one(cid) or {}
+            ^^^^^^^^^^^^
+  File "/home/shinya/eroblog/data_getter/blog_videoc_today.py", line 62, in api_one
+    js  = run(f'{sys.executable} fanza/api_fetch_by_cid.py --cid "{cid}"')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shinya/eroblog/data_getter/blog_videoc_today.py", line 58, in run
+    raise RuntimeError(f"cmd failed: {cmd}\n{p.stderr}")
+RuntimeError: cmd failed: /home/shinya/eroblog_project_GPT/.venv/bin/python fanza/api_fetch_by_cid.py --cid "tow034"
+[ERR] API_ID / AFFILIATE_ID が未設定
+
+[OK] history appended: smuk291
+[OK] daily appended: 20251113.jsonl smuk291
+[RUN] CID=smuk291
+[DOWNLOAD] Checking assets for smuk291...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/smuk291/smuk291jm.jpg
+  Saved poster: smuk291_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuk291/smuk291jp-001.jpg
+  Saved sample: smuk291_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuk291/smuk291jp-002.jpg
+  Saved sample: smuk291_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuk291/smuk291jp-003.jpg
+  Saved sample: smuk291_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuk291/smuk291jp-004.jpg
+  Saved sample: smuk291_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuk291/smuk291jp-005.jpg
+  Saved sample: smuk291_05.jpg
+[DOWNLOAD] Asset check for smuk291 complete.
+[OK] merged: smuk291 images=5 review_len=1081
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: deaa009
+[OK] daily appended: 20251113.jsonl deaa009
+[RUN] CID=deaa009
+[DOWNLOAD] Checking assets for deaa009...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/deaa009/deaa009jm.jpg
+  Saved poster: deaa009_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/deaa009/deaa009jp-001.jpg
+  Saved sample: deaa009_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/deaa009/deaa009jp-002.jpg
+  Saved sample: deaa009_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/deaa009/deaa009jp-003.jpg
+  Saved sample: deaa009_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/deaa009/deaa009jp-004.jpg
+  Saved sample: deaa009_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/deaa009/deaa009jp-005.jpg
+  Saved sample: deaa009_05.jpg
+[DOWNLOAD] Asset check for deaa009 complete.
+[OK] merged: deaa009 images=5 review_len=584
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: hhl152
+[OK] daily appended: 20251114.jsonl hhl152
+[RUN] CID=hhl152
+[DOWNLOAD] Checking assets for hhl152...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/hhl152/hhl152jm.jpg
+  Saved poster: hhl152_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hhl152/hhl152jp-001.jpg
+  Saved sample: hhl152_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hhl152/hhl152jp-002.jpg
+  Saved sample: hhl152_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hhl152/hhl152jp-003.jpg
+  Saved sample: hhl152_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hhl152/hhl152jp-004.jpg
+  Saved sample: hhl152_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hhl152/hhl152jp-005.jpg
+  Saved sample: hhl152_05.jpg
+[DOWNLOAD] Asset check for hhl152 complete.
+[OK] merged: hhl152 images=5 review_len=336
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: sjho036
+[OK] daily appended: 20251114.jsonl sjho036
+[RUN] CID=sjho036
+[DOWNLOAD] Checking assets for sjho036...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/sjho036/sjho036jm.jpg
+  Saved poster: sjho036_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/sjho036/sjho036jp-001.jpg
+  Saved sample: sjho036_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/sjho036/sjho036jp-002.jpg
+  Saved sample: sjho036_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/sjho036/sjho036jp-003.jpg
+  Saved sample: sjho036_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/sjho036/sjho036jp-004.jpg
+  Saved sample: sjho036_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/sjho036/sjho036jp-005.jpg
+  Saved sample: sjho036_05.jpg
+[DOWNLOAD] Asset check for sjho036 complete.
+[OK] merged: sjho036 images=5 review_len=271
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: icg004
+[OK] daily appended: 20251114.jsonl icg004
+[RUN] CID=icg004
+[DOWNLOAD] Checking assets for icg004...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/icg004/icg004jm.jpg
+  Saved poster: icg004_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/icg004/icg004jp-001.jpg
+  Saved sample: icg004_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/icg004/icg004jp-002.jpg
+  Saved sample: icg004_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/icg004/icg004jp-003.jpg
+  Saved sample: icg004_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/icg004/icg004jp-004.jpg
+  Saved sample: icg004_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/icg004/icg004jp-005.jpg
+  Saved sample: icg004_05.jpg
+[DOWNLOAD] Asset check for icg004 complete.
+[OK] merged: icg004 images=5 review_len=249
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: erk105
+[OK] daily appended: 20251115.jsonl erk105
+[RUN] CID=erk105
+[DOWNLOAD] Checking assets for erk105...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/erk105/erk105jm.jpg
+  Saved poster: erk105_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/erk105/erk105jp-001.jpg
+  Saved sample: erk105_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/erk105/erk105jp-002.jpg
+  Saved sample: erk105_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/erk105/erk105jp-003.jpg
+  Saved sample: erk105_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/erk105/erk105jp-004.jpg
+  Saved sample: erk105_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/erk105/erk105jp-005.jpg
+  Saved sample: erk105_05.jpg
+[DOWNLOAD] Asset check for erk105 complete.
+[OK] merged: erk105 images=5 review_len=428
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: smuh067
+[OK] daily appended: 20251115.jsonl smuh067
+[RUN] CID=smuh067
+[DOWNLOAD] Checking assets for smuh067...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/smuh067/smuh067jm.jpg
+  Saved poster: smuh067_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuh067/smuh067jp-001.jpg
+  Saved sample: smuh067_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuh067/smuh067jp-002.jpg
+  Saved sample: smuh067_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuh067/smuh067jp-003.jpg
+  Saved sample: smuh067_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuh067/smuh067jp-004.jpg
+  Saved sample: smuh067_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuh067/smuh067jp-005.jpg
+  Saved sample: smuh067_05.jpg
+[DOWNLOAD] Asset check for smuh067 complete.
+[OK] merged: smuh067 images=5 review_len=787
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: simf004
+[OK] daily appended: 20251115.jsonl simf004
+[RUN] CID=simf004
+[DOWNLOAD] Checking assets for simf004...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/simf004/simf004jm.jpg
+  Saved poster: simf004_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/simf004/simf004jp-001.jpg
+  Saved sample: simf004_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/simf004/simf004jp-002.jpg
+  Saved sample: simf004_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/simf004/simf004jp-003.jpg
+  Saved sample: simf004_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/simf004/simf004jp-004.jpg
+  Saved sample: simf004_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/simf004/simf004jp-005.jpg
+  Saved sample: simf004_05.jpg
+[DOWNLOAD] Asset check for simf004 complete.
+[OK] merged: simf004 images=5 review_len=396
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: hcmn091
+[OK] daily appended: 20251115.jsonl hcmn091
+[RUN] CID=hcmn091
+[DOWNLOAD] Checking assets for hcmn091...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/hcmn091/hcmn091jm.jpg
+  Saved poster: hcmn091_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hcmn091/hcmn091jp-001.jpg
+  Saved sample: hcmn091_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hcmn091/hcmn091jp-002.jpg
+  Saved sample: hcmn091_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hcmn091/hcmn091jp-003.jpg
+  Saved sample: hcmn091_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hcmn091/hcmn091jp-004.jpg
+  Saved sample: hcmn091_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hcmn091/hcmn091jp-005.jpg
+  Saved sample: hcmn091_05.jpg
+[DOWNLOAD] Asset check for hcmn091 complete.
+[OK] merged: hcmn091 images=5 review_len=186
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: bngg001
+[OK] daily appended: 20251115.jsonl bngg001
+[RUN] CID=bngg001
+[DOWNLOAD] Checking assets for bngg001...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/bngg001/bngg001jm.jpg
+  Saved poster: bngg001_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bngg001/bngg001jp-001.jpg
+  Saved sample: bngg001_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bngg001/bngg001jp-002.jpg
+  Saved sample: bngg001_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bngg001/bngg001jp-003.jpg
+  Saved sample: bngg001_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bngg001/bngg001jp-004.jpg
+  Saved sample: bngg001_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bngg001/bngg001jp-005.jpg
+  Saved sample: bngg001_05.jpg
+[DOWNLOAD] Asset check for bngg001 complete.
+[OK] merged: bngg001 images=5 review_len=238
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: smuw050
+[OK] daily appended: 20251115.jsonl smuw050
+[RUN] CID=smuw050
+[DOWNLOAD] Checking assets for smuw050...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/smuw050/smuw050jm.jpg
+  Saved poster: smuw050_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuw050/smuw050jp-001.jpg
+  Saved sample: smuw050_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuw050/smuw050jp-002.jpg
+  Saved sample: smuw050_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuw050/smuw050jp-003.jpg
+  Saved sample: smuw050_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuw050/smuw050jp-004.jpg
+  Saved sample: smuw050_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuw050/smuw050jp-005.jpg
+  Saved sample: smuw050_05.jpg
+[DOWNLOAD] Asset check for smuw050 complete.
+[OK] merged: smuw050 images=5 review_len=372
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: smjs207
+[OK] daily appended: 20251115.jsonl smjs207
+[RUN] CID=smjs207
+[DOWNLOAD] Checking assets for smjs207...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/smjs207/smjs207jm.jpg
+  Saved poster: smjs207_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs207/smjs207jp-001.jpg
+  Saved sample: smjs207_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs207/smjs207jp-002.jpg
+  Saved sample: smjs207_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs207/smjs207jp-003.jpg
+  Saved sample: smjs207_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs207/smjs207jp-004.jpg
+  Saved sample: smjs207_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs207/smjs207jp-005.jpg
+  Saved sample: smjs207_05.jpg
+[DOWNLOAD] Asset check for smjs207 complete.
+[OK] merged: smjs207 images=5 review_len=754
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: smjp064
+[OK] daily appended: 20251115.jsonl smjp064
+[RUN] CID=smjp064
+[DOWNLOAD] Checking assets for smjp064...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/smjp064/smjp064jm.jpg
+  Saved poster: smjp064_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjp064/smjp064jp-001.jpg
+  Saved sample: smjp064_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjp064/smjp064jp-002.jpg
+  Saved sample: smjp064_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjp064/smjp064jp-003.jpg
+  Saved sample: smjp064_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjp064/smjp064jp-004.jpg
+  Saved sample: smjp064_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjp064/smjp064jp-005.jpg
+  Saved sample: smjp064_05.jpg
+[DOWNLOAD] Asset check for smjp064 complete.
+[OK] merged: smjp064 images=5 review_len=470
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: smjs214
+[OK] daily appended: 20251116.jsonl smjs214
+[RUN] CID=smjs214
+[DOWNLOAD] Checking assets for smjs214...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/smjs214/smjs214jm.jpg
+  Saved poster: smjs214_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs214/smjs214jp-001.jpg
+  Saved sample: smjs214_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs214/smjs214jp-002.jpg
+  Saved sample: smjs214_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs214/smjs214jp-003.jpg
+  Saved sample: smjs214_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs214/smjs214jp-004.jpg
+  Saved sample: smjs214_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs214/smjs214jp-005.jpg
+  Saved sample: smjs214_05.jpg
+[DOWNLOAD] Asset check for smjs214 complete.
+[OK] merged: smjs214 images=5 review_len=716
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: smjx117
+[OK] daily appended: 20251116.jsonl smjx117
+[RUN] CID=smjx117
+[DOWNLOAD] Checking assets for smjx117...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/smjx117/smjx117jm.jpg
+  Saved poster: smjx117_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjx117/smjx117jp-001.jpg
+  Saved sample: smjx117_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjx117/smjx117jp-002.jpg
+  Saved sample: smjx117_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjx117/smjx117jp-003.jpg
+  Saved sample: smjx117_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjx117/smjx117jp-004.jpg
+  Saved sample: smjx117_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjx117/smjx117jp-005.jpg
+  Saved sample: smjx117_05.jpg
+[DOWNLOAD] Asset check for smjx117 complete.
+[OK] merged: smjx117 images=5 review_len=322
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: simo010
+[OK] daily appended: 20251116.jsonl simo010
+[RUN] CID=simo010
+[DOWNLOAD] Checking assets for simo010...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/simo010/simo010jm.jpg
+  Saved poster: simo010_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/simo010/simo010jp-001.jpg
+  Saved sample: simo010_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/simo010/simo010jp-002.jpg
+  Saved sample: simo010_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/simo010/simo010jp-003.jpg
+  Saved sample: simo010_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/simo010/simo010jp-004.jpg
+  Saved sample: simo010_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/simo010/simo010jp-005.jpg
+  Saved sample: simo010_05.jpg
+[DOWNLOAD] Asset check for simo010 complete.
+[OK] merged: simo010 images=5 review_len=388
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: smuk292
+[OK] daily appended: 20251116.jsonl smuk292
+[RUN] CID=smuk292
+[DOWNLOAD] Checking assets for smuk292...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/smuk292/smuk292jm.jpg
+  Saved poster: smuk292_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuk292/smuk292jp-001.jpg
+  Saved sample: smuk292_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuk292/smuk292jp-002.jpg
+  Saved sample: smuk292_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuk292/smuk292jp-003.jpg
+  Saved sample: smuk292_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuk292/smuk292jp-004.jpg
+  Saved sample: smuk292_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuk292/smuk292jp-005.jpg
+  Saved sample: smuk292_05.jpg
+[DOWNLOAD] Asset check for smuk292 complete.
+[OK] merged: smuk292 images=5 review_len=1363
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: orecz336
+[OK] daily appended: 20251116.jsonl orecz336
+[RUN] CID=orecz336
+[DOWNLOAD] Checking assets for orecz336...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/orecz336/orecz336jm.jpg
+  Saved poster: orecz336_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/orecz336/orecz336jp-001.jpg
+  Saved sample: orecz336_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/orecz336/orecz336jp-002.jpg
+  Saved sample: orecz336_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/orecz336/orecz336jp-003.jpg
+  Saved sample: orecz336_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/orecz336/orecz336jp-004.jpg
+  Saved sample: orecz336_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/orecz336/orecz336jp-005.jpg
+  Saved sample: orecz336_05.jpg
+[DOWNLOAD] Asset check for orecz336 complete.
+[OK] merged: orecz336 images=5 review_len=277
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: smub060
+[OK] daily appended: 20251117.jsonl smub060
+[RUN] CID=smub060
+[DOWNLOAD] Checking assets for smub060...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/smub060/smub060jm.jpg
+  Saved poster: smub060_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smub060/smub060jp-001.jpg
+  Saved sample: smub060_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smub060/smub060jp-002.jpg
+  Saved sample: smub060_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smub060/smub060jp-003.jpg
+  Saved sample: smub060_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smub060/smub060jp-004.jpg
+  Saved sample: smub060_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smub060/smub060jp-005.jpg
+  Saved sample: smub060_05.jpg
+[DOWNLOAD] Asset check for smub060 complete.
+[OK] merged: smub060 images=5 review_len=333
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: deli016
+[OK] daily appended: 20251117.jsonl deli016
+[RUN] CID=deli016
+[DOWNLOAD] Checking assets for deli016...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/deli016/deli016jm.jpg
+  Saved poster: deli016_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/deli016/deli016jp-001.jpg
+  Saved sample: deli016_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/deli016/deli016jp-002.jpg
+  Saved sample: deli016_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/deli016/deli016jp-003.jpg
+  Saved sample: deli016_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/deli016/deli016jp-004.jpg
+  Saved sample: deli016_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/deli016/deli016jp-005.jpg
+  Saved sample: deli016_05.jpg
+[DOWNLOAD] Asset check for deli016 complete.
+[OK] merged: deli016 images=5 review_len=777
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: mfcw061
+[OK] daily appended: 20251117.jsonl mfcw061
+[RUN] CID=mfcw061
+[DOWNLOAD] Checking assets for mfcw061...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/mfcw061/mfcw061jm.jpg
+  Saved poster: mfcw061_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mfcw061/mfcw061jp-001.jpg
+  Saved sample: mfcw061_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mfcw061/mfcw061jp-002.jpg
+  Saved sample: mfcw061_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mfcw061/mfcw061jp-003.jpg
+  Saved sample: mfcw061_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mfcw061/mfcw061jp-004.jpg
+  Saved sample: mfcw061_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mfcw061/mfcw061jp-005.jpg
+  Saved sample: mfcw061_05.jpg
+[DOWNLOAD] Asset check for mfcw061 complete.
+[OK] merged: mfcw061 images=5 review_len=648
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: smjs200
+[OK] daily appended: 20251117.jsonl smjs200
+[RUN] CID=smjs200
+[DOWNLOAD] Checking assets for smjs200...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/smjs200/smjs200jm.jpg
+  Saved poster: smjs200_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs200/smjs200jp-001.jpg
+  Saved sample: smjs200_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs200/smjs200jp-002.jpg
+  Saved sample: smjs200_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs200/smjs200jp-003.jpg
+  Saved sample: smjs200_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs200/smjs200jp-004.jpg
+  Saved sample: smjs200_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs200/smjs200jp-005.jpg
+  Saved sample: smjs200_05.jpg
+[DOWNLOAD] Asset check for smjs200 complete.
+[OK] merged: smjs200 images=5 review_len=727
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: bshi024
+[OK] daily appended: 20251118.jsonl bshi024
+[RUN] CID=bshi024
+[DOWNLOAD] Checking assets for bshi024...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/bshi024/bshi024jm.jpg
+  Saved poster: bshi024_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bshi024/bshi024jp-001.jpg
+  Saved sample: bshi024_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bshi024/bshi024jp-002.jpg
+  Saved sample: bshi024_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bshi024/bshi024jp-003.jpg
+  Saved sample: bshi024_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bshi024/bshi024jp-004.jpg
+  Saved sample: bshi024_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bshi024/bshi024jp-005.jpg
+  Saved sample: bshi024_05.jpg
+[DOWNLOAD] Asset check for bshi024 complete.
+[OK] merged: bshi024 images=5 review_len=320
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: mfcs186
+[OK] daily appended: 20251118.jsonl mfcs186
+[RUN] CID=mfcs186
+[DOWNLOAD] Checking assets for mfcs186...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/mfcs186/mfcs186jm.jpg
+  Saved poster: mfcs186_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mfcs186/mfcs186jp-001.jpg
+  Saved sample: mfcs186_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mfcs186/mfcs186jp-002.jpg
+  Saved sample: mfcs186_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mfcs186/mfcs186jp-003.jpg
+  Saved sample: mfcs186_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mfcs186/mfcs186jp-004.jpg
+  Saved sample: mfcs186_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mfcs186/mfcs186jp-005.jpg
+  Saved sample: mfcs186_05.jpg
+[DOWNLOAD] Asset check for mfcs186 complete.
+[OK] merged: mfcs186 images=5 review_len=1030
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: smjj106
+[OK] daily appended: 20251118.jsonl smjj106
+[RUN] CID=smjj106
+[DOWNLOAD] Checking assets for smjj106...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/smjj106/smjj106jm.jpg
+  Saved poster: smjj106_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjj106/smjj106jp-001.jpg
+  Saved sample: smjj106_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjj106/smjj106jp-002.jpg
+  Saved sample: smjj106_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjj106/smjj106jp-003.jpg
+  Saved sample: smjj106_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjj106/smjj106jp-004.jpg
+  Saved sample: smjj106_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjj106/smjj106jp-005.jpg
+  Saved sample: smjj106_05.jpg
+[DOWNLOAD] Asset check for smjj106 complete.
+[OK] merged: smjj106 images=5 review_len=714
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: smuk289
+[OK] daily appended: 20251118.jsonl smuk289
+[RUN] CID=smuk289
+[DOWNLOAD] Checking assets for smuk289...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/smuk289/smuk289jm.jpg
+  Saved poster: smuk289_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuk289/smuk289jp-001.jpg
+  Saved sample: smuk289_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuk289/smuk289jp-002.jpg
+  Saved sample: smuk289_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuk289/smuk289jp-003.jpg
+  Saved sample: smuk289_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuk289/smuk289jp-004.jpg
+  Saved sample: smuk289_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuk289/smuk289jp-005.jpg
+  Saved sample: smuk289_05.jpg
+[DOWNLOAD] Asset check for smuk289 complete.
+[OK] merged: smuk289 images=5 review_len=1084
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: smjz093
+[OK] daily appended: 20251118.jsonl smjz093
+[RUN] CID=smjz093
+[DOWNLOAD] Checking assets for smjz093...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/smjz093/smjz093jm.jpg
+  Saved poster: smjz093_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjz093/smjz093jp-001.jpg
+  Saved sample: smjz093_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjz093/smjz093jp-002.jpg
+  Saved sample: smjz093_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjz093/smjz093jp-003.jpg
+  Saved sample: smjz093_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjz093/smjz093jp-004.jpg
+  Saved sample: smjz093_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjz093/smjz093jp-005.jpg
+  Saved sample: smjz093_05.jpg
+[DOWNLOAD] Asset check for smjz093 complete.
+[OK] merged: smjz093 images=5 review_len=349
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: pai159
+[OK] daily appended: 20251118.jsonl pai159
+[RUN] CID=pai159
+[DOWNLOAD] Checking assets for pai159...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/pai159/pai159jm.jpg
+  Saved poster: pai159_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/pai159/pai159jp-001.jpg
+  Saved sample: pai159_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/pai159/pai159jp-002.jpg
+  Saved sample: pai159_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/pai159/pai159jp-003.jpg
+  Saved sample: pai159_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/pai159/pai159jp-004.jpg
+  Saved sample: pai159_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/pai159/pai159jp-005.jpg
+  Saved sample: pai159_05.jpg
+[DOWNLOAD] Asset check for pai159 complete.
+[OK] merged: pai159 images=5 review_len=155
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: orecz338
+[OK] daily appended: 20251118.jsonl orecz338
+[RUN] CID=orecz338
+[DOWNLOAD] Checking assets for orecz338...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/orecz338/orecz338jm.jpg
+  Saved poster: orecz338_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/orecz338/orecz338jp-001.jpg
+  Saved sample: orecz338_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/orecz338/orecz338jp-002.jpg
+  Saved sample: orecz338_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/orecz338/orecz338jp-003.jpg
+  Saved sample: orecz338_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/orecz338/orecz338jp-004.jpg
+  Saved sample: orecz338_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/orecz338/orecz338jp-005.jpg
+  Saved sample: orecz338_05.jpg
+[DOWNLOAD] Asset check for orecz338 complete.
+[OK] merged: orecz338 images=5 review_len=278
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: mla242
+[OK] daily appended: 20251118.jsonl mla242
+[RUN] CID=mla242
+[DOWNLOAD] Checking assets for mla242...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/mla242/mla242jm.jpg
+  Saved poster: mla242_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mla242/mla242jp-001.jpg
+  Saved sample: mla242_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mla242/mla242jp-002.jpg
+  Saved sample: mla242_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mla242/mla242jp-003.jpg
+  Saved sample: mla242_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mla242/mla242jp-004.jpg
+  Saved sample: mla242_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mla242/mla242jp-005.jpg
+  Saved sample: mla242_05.jpg
+[DOWNLOAD] Asset check for mla242 complete.
+[OK] merged: mla242 images=5 review_len=326
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: bshi023
+[OK] daily appended: 20251118.jsonl bshi023
+[RUN] CID=bshi023
+[DOWNLOAD] Checking assets for bshi023...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/bshi023/bshi023jm.jpg
+  Saved poster: bshi023_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bshi023/bshi023jp-001.jpg
+  Saved sample: bshi023_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bshi023/bshi023jp-002.jpg
+  Saved sample: bshi023_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bshi023/bshi023jp-003.jpg
+  Saved sample: bshi023_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bshi023/bshi023jp-004.jpg
+  Saved sample: bshi023_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bshi023/bshi023jp-005.jpg
+  Saved sample: bshi023_05.jpg
+[DOWNLOAD] Asset check for bshi023 complete.
+[OK] merged: bshi023 images=5 review_len=294
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: bshi022
+[OK] daily appended: 20251118.jsonl bshi022
+[RUN] CID=bshi022
+[DOWNLOAD] Checking assets for bshi022...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/bshi022/bshi022jm.jpg
+  Saved poster: bshi022_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bshi022/bshi022jp-001.jpg
+  Saved sample: bshi022_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bshi022/bshi022jp-002.jpg
+  Saved sample: bshi022_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bshi022/bshi022jp-003.jpg
+  Saved sample: bshi022_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bshi022/bshi022jp-004.jpg
+  Saved sample: bshi022_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bshi022/bshi022jp-005.jpg
+  Saved sample: bshi022_05.jpg
+[DOWNLOAD] Asset check for bshi022 complete.
+[OK] merged: bshi022 images=5 review_len=322
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: smjk111
+[OK] daily appended: 20251117.jsonl smjk111
+[RUN] CID=smjk111
+[DOWNLOAD] Checking assets for smjk111...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/smjk111/smjk111jm.jpg
+  Saved poster: smjk111_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjk111/smjk111jp-001.jpg
+  Saved sample: smjk111_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjk111/smjk111jp-002.jpg
+  Saved sample: smjk111_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjk111/smjk111jp-003.jpg
+  Saved sample: smjk111_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjk111/smjk111jp-004.jpg
+  Saved sample: smjk111_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjk111/smjk111jp-005.jpg
+  Saved sample: smjk111_05.jpg
+[DOWNLOAD] Asset check for smjk111 complete.
+[OK] merged: smjk111 images=5 review_len=605
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: tkk078
+[OK] daily appended: 20251117.jsonl tkk078
+[RUN] CID=tkk078
+[DOWNLOAD] Checking assets for tkk078...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/tkk078/tkk078jm.jpg
+  Saved poster: tkk078_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/tkk078/tkk078jp-001.jpg
+  Saved sample: tkk078_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/tkk078/tkk078jp-002.jpg
+  Saved sample: tkk078_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/tkk078/tkk078jp-003.jpg
+  Saved sample: tkk078_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/tkk078/tkk078jp-004.jpg
+  Saved sample: tkk078_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/tkk078/tkk078jp-005.jpg
+  Saved sample: tkk078_05.jpg
+[DOWNLOAD] Asset check for tkk078 complete.
+[OK] merged: tkk078 images=5 review_len=246
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: pchn2034
+[OK] daily appended: 20251119.jsonl pchn2034
+[RUN] CID=pchn2034
+[DOWNLOAD] Checking assets for pchn2034...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/pchn2034/pchn2034jm.jpg
+  Saved poster: pchn2034_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/pchn2034/pchn2034jp-001.jpg
+  Saved sample: pchn2034_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/pchn2034/pchn2034jp-002.jpg
+  Saved sample: pchn2034_02.jpg
+[DOWNLOAD] Asset check for pchn2034 complete.
+[OK] merged: pchn2034 images=2 review_len=109
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: simp008
+[OK] daily appended: 20251119.jsonl simp008
+[RUN] CID=simp008
+[DOWNLOAD] Checking assets for simp008...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/simp008/simp008jm.jpg
+  Saved poster: simp008_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/simp008/simp008jp-001.jpg
+  Saved sample: simp008_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/simp008/simp008jp-002.jpg
+  Saved sample: simp008_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/simp008/simp008jp-003.jpg
+  Saved sample: simp008_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/simp008/simp008jp-004.jpg
+  Saved sample: simp008_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/simp008/simp008jp-005.jpg
+  Saved sample: simp008_05.jpg
+[DOWNLOAD] Asset check for simp008 complete.
+[OK] merged: simp008 images=5 review_len=269
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: mgsod034
+[OK] daily appended: 20251119.jsonl mgsod034
+[RUN] CID=mgsod034
+[DOWNLOAD] Checking assets for mgsod034...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/mgsod034/mgsod034jm.jpg
+  Saved poster: mgsod034_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mgsod034/mgsod034jp-001.jpg
+  Saved sample: mgsod034_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mgsod034/mgsod034jp-002.jpg
+  Saved sample: mgsod034_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mgsod034/mgsod034jp-003.jpg
+  Saved sample: mgsod034_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mgsod034/mgsod034jp-004.jpg
+  Saved sample: mgsod034_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mgsod034/mgsod034jp-005.jpg
+  Saved sample: mgsod034_05.jpg
+[DOWNLOAD] Asset check for mgsod034 complete.
+[OK] merged: mgsod034 images=5 review_len=146
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: smjs191
+[OK] daily appended: 20251119.jsonl smjs191
+[RUN] CID=smjs191
+[DOWNLOAD] Checking assets for smjs191...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/smjs191/smjs191jm.jpg
+  Saved poster: smjs191_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs191/smjs191jp-001.jpg
+  Saved sample: smjs191_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs191/smjs191jp-002.jpg
+  Saved sample: smjs191_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs191/smjs191jp-003.jpg
+  Saved sample: smjs191_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs191/smjs191jp-004.jpg
+  Saved sample: smjs191_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs191/smjs191jp-005.jpg
+  Saved sample: smjs191_05.jpg
+[DOWNLOAD] Asset check for smjs191 complete.
+[OK] merged: smjs191 images=5 review_len=690
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: smjx131
+[OK] daily appended: 20251119.jsonl smjx131
+[RUN] CID=smjx131
+[DOWNLOAD] Checking assets for smjx131...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/smjx131/smjx131jm.jpg
+  Saved poster: smjx131_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjx131/smjx131jp-001.jpg
+  Saved sample: smjx131_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjx131/smjx131jp-002.jpg
+  Saved sample: smjx131_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjx131/smjx131jp-003.jpg
+  Saved sample: smjx131_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjx131/smjx131jp-004.jpg
+  Saved sample: smjx131_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjx131/smjx131jp-005.jpg
+  Saved sample: smjx131_05.jpg
+[DOWNLOAD] Asset check for smjx131 complete.
+[OK] merged: smjx131 images=5 review_len=436
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: pai178
+[OK] daily appended: 20251119.jsonl pai178
+[RUN] CID=pai178
+[DOWNLOAD] Checking assets for pai178...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/pai178/pai178jm.jpg
+  Saved poster: pai178_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/pai178/pai178jp-001.jpg
+  Saved sample: pai178_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/pai178/pai178jp-002.jpg
+  Saved sample: pai178_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/pai178/pai178jp-003.jpg
+  Saved sample: pai178_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/pai178/pai178jp-004.jpg
+  Saved sample: pai178_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/pai178/pai178jp-005.jpg
+  Saved sample: pai178_05.jpg
+[DOWNLOAD] Asset check for pai178 complete.
+[OK] merged: pai178 images=5 review_len=786
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: msodn015
+[OK] daily appended: 20251119.jsonl msodn015
+[RUN] CID=msodn015
+[DOWNLOAD] Checking assets for msodn015...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/msodn015/msodn015jm.jpg
+  Saved poster: msodn015_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/msodn015/msodn015jp-001.jpg
+  Saved sample: msodn015_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/msodn015/msodn015jp-002.jpg
+  Saved sample: msodn015_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/msodn015/msodn015jp-003.jpg
+  Saved sample: msodn015_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/msodn015/msodn015jp-004.jpg
+  Saved sample: msodn015_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/msodn015/msodn015jp-005.jpg
+  Saved sample: msodn015_05.jpg
+[DOWNLOAD] Asset check for msodn015 complete.
+[OK] merged: msodn015 images=5 review_len=0
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: orecz339
+[OK] daily appended: 20251119.jsonl orecz339
+[RUN] CID=orecz339
+[DOWNLOAD] Checking assets for orecz339...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/orecz339/orecz339jm.jpg
+  Saved poster: orecz339_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/orecz339/orecz339jp-001.jpg
+  Saved sample: orecz339_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/orecz339/orecz339jp-002.jpg
+  Saved sample: orecz339_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/orecz339/orecz339jp-003.jpg
+  Saved sample: orecz339_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/orecz339/orecz339jp-004.jpg
+  Saved sample: orecz339_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/orecz339/orecz339jp-005.jpg
+  Saved sample: orecz339_05.jpg
+[DOWNLOAD] Asset check for orecz339 complete.
+[OK] merged: orecz339 images=5 review_len=284
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: hmdnc876
+[OK] daily appended: 20251119.jsonl hmdnc876
+[RUN] CID=hmdnc876
+[DOWNLOAD] Checking assets for hmdnc876...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/hmdnc876/hmdnc876jm.jpg
+  Saved poster: hmdnc876_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hmdnc876/hmdnc876jp-001.jpg
+  Saved sample: hmdnc876_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hmdnc876/hmdnc876jp-002.jpg
+  Saved sample: hmdnc876_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hmdnc876/hmdnc876jp-003.jpg
+  Saved sample: hmdnc876_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hmdnc876/hmdnc876jp-004.jpg
+  Saved sample: hmdnc876_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hmdnc876/hmdnc876jp-005.jpg
+  Saved sample: hmdnc876_05.jpg
+[DOWNLOAD] Asset check for hmdnc876 complete.
+[OK] merged: hmdnc876 images=5 review_len=288
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: msods021
+[OK] daily appended: 20251119.jsonl msods021
+[RUN] CID=msods021
+[DOWNLOAD] Checking assets for msods021...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/msods021/msods021jm.jpg
+  Saved poster: msods021_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/msods021/msods021jp-001.jpg
+  Saved sample: msods021_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/msods021/msods021jp-002.jpg
+  Saved sample: msods021_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/msods021/msods021jp-003.jpg
+  Saved sample: msods021_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/msods021/msods021jp-004.jpg
+  Saved sample: msods021_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/msods021/msods021jp-005.jpg
+  Saved sample: msods021_05.jpg
+[DOWNLOAD] Asset check for msods021 complete.
+[OK] merged: msods021 images=5 review_len=122
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: mla243
+[OK] daily appended: 20251119.jsonl mla243
+[RUN] CID=mla243
+[DOWNLOAD] Checking assets for mla243...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/mla243/mla243jm.jpg
+  Saved poster: mla243_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mla243/mla243jp-001.jpg
+  Saved sample: mla243_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mla243/mla243jp-002.jpg
+  Saved sample: mla243_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mla243/mla243jp-003.jpg
+  Saved sample: mla243_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mla243/mla243jp-004.jpg
+  Saved sample: mla243_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mla243/mla243jp-005.jpg
+  Saved sample: mla243_05.jpg
+[DOWNLOAD] Asset check for mla243 complete.
+[OK] merged: mla243 images=5 review_len=256
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: maj041
+[OK] daily appended: 20251119.jsonl maj041
+[RUN] CID=maj041
+[DOWNLOAD] Checking assets for maj041...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/maj041/maj041jm.jpg
+  Saved poster: maj041_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/maj041/maj041jp-001.jpg
+  Saved sample: maj041_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/maj041/maj041jp-002.jpg
+  Saved sample: maj041_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/maj041/maj041jp-003.jpg
+  Saved sample: maj041_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/maj041/maj041jp-004.jpg
+  Saved sample: maj041_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/maj041/maj041jp-005.jpg
+  Saved sample: maj041_05.jpg
+[DOWNLOAD] Asset check for maj041 complete.
+[OK] merged: maj041 images=5 review_len=111
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: tpc024
+[OK] daily appended: 20251119.jsonl tpc024
+[RUN] CID=tpc024
+[DOWNLOAD] Checking assets for tpc024...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/tpc024/tpc024jm.jpg
+  Saved poster: tpc024_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/tpc024/tpc024jp-001.jpg
+  Saved sample: tpc024_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/tpc024/tpc024jp-002.jpg
+  Saved sample: tpc024_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/tpc024/tpc024jp-003.jpg
+  Saved sample: tpc024_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/tpc024/tpc024jp-004.jpg
+  Saved sample: tpc024_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/tpc024/tpc024jp-005.jpg
+  Saved sample: tpc024_05.jpg
+[DOWNLOAD] Asset check for tpc024 complete.
+[OK] merged: tpc024 images=5 review_len=332
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: ends259
+[OK] daily appended: 20251119.jsonl ends259
+[RUN] CID=ends259
+[DOWNLOAD] Checking assets for ends259...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/ends259/ends259jm.jpg
+  Saved poster: ends259_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/ends259/ends259jp-001.jpg
+  Saved sample: ends259_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/ends259/ends259jp-002.jpg
+  Saved sample: ends259_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/ends259/ends259jp-003.jpg
+  Saved sample: ends259_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/ends259/ends259jp-004.jpg
+  Saved sample: ends259_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/ends259/ends259jp-005.jpg
+  Saved sample: ends259_05.jpg
+[DOWNLOAD] Asset check for ends259 complete.
+[OK] merged: ends259 images=5 review_len=56
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: hpt062
+[OK] daily appended: 20251120.jsonl hpt062
+[RUN] CID=hpt062
+[DOWNLOAD] Checking assets for hpt062...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/hpt062/hpt062jm.jpg
+  Saved poster: hpt062_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hpt062/hpt062jp-001.jpg
+  Saved sample: hpt062_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hpt062/hpt062jp-002.jpg
+  Saved sample: hpt062_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hpt062/hpt062jp-003.jpg
+  Saved sample: hpt062_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hpt062/hpt062jp-004.jpg
+  Saved sample: hpt062_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hpt062/hpt062jp-005.jpg
+  Saved sample: hpt062_05.jpg
+[DOWNLOAD] Asset check for hpt062 complete.
+[OK] merged: hpt062 images=5 review_len=537
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: sth127
+[OK] daily appended: 20251121.jsonl sth127
+[RUN] CID=sth127
+[DOWNLOAD] Checking assets for sth127...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/sth127/sth127jm.jpg
+  Saved poster: sth127_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/sth127/sth127jp-001.jpg
+  Saved sample: sth127_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/sth127/sth127jp-002.jpg
+  Saved sample: sth127_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/sth127/sth127jp-003.jpg
+  Saved sample: sth127_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/sth127/sth127jp-004.jpg
+  Saved sample: sth127_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/sth127/sth127jp-005.jpg
+  Saved sample: sth127_05.jpg
+[DOWNLOAD] Asset check for sth127 complete.
+[OK] merged: sth127 images=5 review_len=490
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: sdj050
+[OK] daily appended: 20251121.jsonl sdj050
+[RUN] CID=sdj050
+[DOWNLOAD] Checking assets for sdj050...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/sdj050/sdj050jm.jpg
+  Saved poster: sdj050_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/sdj050/sdj050jp-001.jpg
+  Saved sample: sdj050_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/sdj050/sdj050jp-002.jpg
+  Saved sample: sdj050_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/sdj050/sdj050jp-003.jpg
+  Saved sample: sdj050_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/sdj050/sdj050jp-004.jpg
+  Saved sample: sdj050_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/sdj050/sdj050jp-005.jpg
+  Saved sample: sdj050_05.jpg
+[DOWNLOAD] Asset check for sdj050 complete.
+[OK] merged: sdj050 images=5 review_len=862
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: kjm011
+[OK] daily appended: 20251121.jsonl kjm011
+[RUN] CID=kjm011
+[DOWNLOAD] Checking assets for kjm011...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/kjm011/kjm011jm.jpg
+  Saved poster: kjm011_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/kjm011/kjm011jp-001.jpg
+  Saved sample: kjm011_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/kjm011/kjm011jp-002.jpg
+  Saved sample: kjm011_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/kjm011/kjm011jp-003.jpg
+  Saved sample: kjm011_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/kjm011/kjm011jp-004.jpg
+  Saved sample: kjm011_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/kjm011/kjm011jp-005.jpg
+  Saved sample: kjm011_05.jpg
+[DOWNLOAD] Asset check for kjm011 complete.
+[OK] merged: kjm011 images=5 review_len=302
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: dni200
+[OK] daily appended: 20251121.jsonl dni200
+[RUN] CID=dni200
+[DOWNLOAD] Checking assets for dni200...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/dni200/dni200jm.jpg
+  Saved poster: dni200_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/dni200/dni200jp-001.jpg
+  Saved sample: dni200_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/dni200/dni200jp-002.jpg
+  Saved sample: dni200_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/dni200/dni200jp-003.jpg
+  Saved sample: dni200_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/dni200/dni200jp-004.jpg
+  Saved sample: dni200_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/dni200/dni200jp-005.jpg
+  Saved sample: dni200_05.jpg
+[DOWNLOAD] Asset check for dni200 complete.
+[OK] merged: dni200 images=5 review_len=267
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: hoi394
+[OK] daily appended: 20251122.jsonl hoi394
+[RUN] CID=hoi394
+[DOWNLOAD] Checking assets for hoi394...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/hoi394/hoi394jm.jpg
+  Saved poster: hoi394_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hoi394/hoi394jp-001.jpg
+  Saved sample: hoi394_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hoi394/hoi394jp-002.jpg
+  Saved sample: hoi394_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hoi394/hoi394jp-003.jpg
+  Saved sample: hoi394_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hoi394/hoi394jp-004.jpg
+  Saved sample: hoi394_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hoi394/hoi394jp-005.jpg
+  Saved sample: hoi394_05.jpg
+[DOWNLOAD] Asset check for hoi394 complete.
+[OK] merged: hoi394 images=5 review_len=317
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: bouz006
+[OK] daily appended: 20251122.jsonl bouz006
+[RUN] CID=bouz006
+[DOWNLOAD] Checking assets for bouz006...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/bouz006/bouz006jm.jpg
+  Saved poster: bouz006_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bouz006/bouz006jp-001.jpg
+  Saved sample: bouz006_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bouz006/bouz006jp-002.jpg
+  Saved sample: bouz006_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bouz006/bouz006jp-003.jpg
+  Saved sample: bouz006_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bouz006/bouz006jp-004.jpg
+  Saved sample: bouz006_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bouz006/bouz006jp-005.jpg
+  Saved sample: bouz006_05.jpg
+[DOWNLOAD] Asset check for bouz006 complete.
+[OK] merged: bouz006 images=5 review_len=165
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: smjs202
+[OK] daily appended: 20251122.jsonl smjs202
+[RUN] CID=smjs202
+[DOWNLOAD] Checking assets for smjs202...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/smjs202/smjs202jm.jpg
+  Saved poster: smjs202_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs202/smjs202jp-001.jpg
+  Saved sample: smjs202_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs202/smjs202jp-002.jpg
+  Saved sample: smjs202_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs202/smjs202jp-003.jpg
+  Saved sample: smjs202_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs202/smjs202jp-004.jpg
+  Saved sample: smjs202_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs202/smjs202jp-005.jpg
+  Saved sample: smjs202_05.jpg
+[DOWNLOAD] Asset check for smjs202 complete.
+[OK] merged: smjs202 images=5 review_len=630
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: gesy085
+[OK] daily appended: 20251122.jsonl gesy085
+[RUN] CID=gesy085
+[DOWNLOAD] Checking assets for gesy085...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/gesy085/gesy085jm.jpg
+  Saved poster: gesy085_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/gesy085/gesy085jp-001.jpg
+  Saved sample: gesy085_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/gesy085/gesy085jp-002.jpg
+  Saved sample: gesy085_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/gesy085/gesy085jp-003.jpg
+  Saved sample: gesy085_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/gesy085/gesy085jp-004.jpg
+  Saved sample: gesy085_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/gesy085/gesy085jp-005.jpg
+  Saved sample: gesy085_05.jpg
+[DOWNLOAD] Asset check for gesy085 complete.
+[OK] merged: gesy085 images=5 review_len=195
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: orecz342
+[OK] daily appended: 20251122.jsonl orecz342
+[RUN] CID=orecz342
+[DOWNLOAD] Checking assets for orecz342...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/orecz342/orecz342jm.jpg
+  Saved poster: orecz342_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/orecz342/orecz342jp-001.jpg
+  Saved sample: orecz342_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/orecz342/orecz342jp-002.jpg
+  Saved sample: orecz342_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/orecz342/orecz342jp-003.jpg
+  Saved sample: orecz342_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/orecz342/orecz342jp-004.jpg
+  Saved sample: orecz342_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/orecz342/orecz342jp-005.jpg
+  Saved sample: orecz342_05.jpg
+[DOWNLOAD] Asset check for orecz342 complete.
+[OK] merged: orecz342 images=5 review_len=184
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: lady538
+[OK] daily appended: 20251122.jsonl lady538
+[RUN] CID=lady538
+[DOWNLOAD] Checking assets for lady538...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/lady538/lady538jm.jpg
+  Saved poster: lady538_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/lady538/lady538jp-001.jpg
+  Saved sample: lady538_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/lady538/lady538jp-002.jpg
+  Saved sample: lady538_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/lady538/lady538jp-003.jpg
+  Saved sample: lady538_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/lady538/lady538jp-004.jpg
+  Saved sample: lady538_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/lady538/lady538jp-005.jpg
+  Saved sample: lady538_05.jpg
+[DOWNLOAD] Asset check for lady538 complete.
+[OK] merged: lady538 images=5 review_len=114
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: hmdnc880
+[OK] daily appended: 20251122.jsonl hmdnc880
+[RUN] CID=hmdnc880
+[DOWNLOAD] Checking assets for hmdnc880...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/hmdnc880/hmdnc880jm.jpg
+  Saved poster: hmdnc880_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hmdnc880/hmdnc880jp-001.jpg
+  Saved sample: hmdnc880_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hmdnc880/hmdnc880jp-002.jpg
+  Saved sample: hmdnc880_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hmdnc880/hmdnc880jp-003.jpg
+  Saved sample: hmdnc880_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hmdnc880/hmdnc880jp-004.jpg
+  Saved sample: hmdnc880_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hmdnc880/hmdnc880jp-005.jpg
+  Saved sample: hmdnc880_05.jpg
+[DOWNLOAD] Asset check for hmdnc880 complete.
+[OK] merged: hmdnc880 images=5 review_len=551
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: mrs0035
+[OK] daily appended: 20251122.jsonl mrs0035
+[RUN] CID=mrs0035
+[DOWNLOAD] Checking assets for mrs0035...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/mrs0035/mrs0035jm.jpg
+  Saved poster: mrs0035_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mrs0035/mrs0035jp-001.jpg
+  Saved sample: mrs0035_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mrs0035/mrs0035jp-002.jpg
+  Saved sample: mrs0035_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mrs0035/mrs0035jp-003.jpg
+  Saved sample: mrs0035_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mrs0035/mrs0035jp-004.jpg
+  Saved sample: mrs0035_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mrs0035/mrs0035jp-005.jpg
+  Saved sample: mrs0035_05.jpg
+[DOWNLOAD] Asset check for mrs0035 complete.
+[OK] merged: mrs0035 images=5 review_len=312
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: smuv011
+[OK] daily appended: 20251122.jsonl smuv011
+[RUN] CID=smuv011
+[DOWNLOAD] Checking assets for smuv011...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/smuv011/smuv011jm.jpg
+  Saved poster: smuv011_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuv011/smuv011jp-001.jpg
+  Saved sample: smuv011_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuv011/smuv011jp-002.jpg
+  Saved sample: smuv011_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuv011/smuv011jp-003.jpg
+  Saved sample: smuv011_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuv011/smuv011jp-004.jpg
+  Saved sample: smuv011_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuv011/smuv011jp-005.jpg
+  Saved sample: smuv011_05.jpg
+[DOWNLOAD] Asset check for smuv011 complete.
+[OK] merged: smuv011 images=5 review_len=113
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: docs113
+[OK] daily appended: 20251122.jsonl docs113
+[RUN] CID=docs113
+[DOWNLOAD] Checking assets for docs113...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/docs113/docs113jm.jpg
+  Saved poster: docs113_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/docs113/docs113jp-001.jpg
+  Saved sample: docs113_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/docs113/docs113jp-002.jpg
+  Saved sample: docs113_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/docs113/docs113jp-003.jpg
+  Saved sample: docs113_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/docs113/docs113jp-004.jpg
+  Saved sample: docs113_04.jpg
+[DOWNLOAD] Asset check for docs113 complete.
+[OK] merged: docs113 images=4 review_len=600
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: hint0696
+[OK] daily appended: 20251122.jsonl hint0696
+[RUN] CID=hint0696
+[DOWNLOAD] Checking assets for hint0696...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/hint0696/hint0696jm.jpg
+  Saved poster: hint0696_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hint0696/hint0696jp-001.jpg
+  Saved sample: hint0696_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hint0696/hint0696jp-002.jpg
+  Saved sample: hint0696_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hint0696/hint0696jp-003.jpg
+  Saved sample: hint0696_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hint0696/hint0696jp-004.jpg
+  Saved sample: hint0696_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hint0696/hint0696jp-005.jpg
+  Saved sample: hint0696_05.jpg
+[DOWNLOAD] Asset check for hint0696 complete.
+[OK] merged: hint0696 images=5 review_len=235
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: pnme285
+[OK] daily appended: 20251122.jsonl pnme285
+[RUN] CID=pnme285
+[DOWNLOAD] Checking assets for pnme285...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/pnme285/pnme285jm.jpg
+  Saved poster: pnme285_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/pnme285/pnme285jp-001.jpg
+  Saved sample: pnme285_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/pnme285/pnme285jp-002.jpg
+  Saved sample: pnme285_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/pnme285/pnme285jp-003.jpg
+  Saved sample: pnme285_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/pnme285/pnme285jp-004.jpg
+  Saved sample: pnme285_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/pnme285/pnme285jp-005.jpg
+  Saved sample: pnme285_05.jpg
+[DOWNLOAD] Asset check for pnme285 complete.
+[OK] merged: pnme285 images=5 review_len=1323
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: urutora214
+[OK] daily appended: 20251122.jsonl urutora214
+[RUN] CID=urutora214
+[DOWNLOAD] Checking assets for urutora214...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/urutora214/urutora214jm.jpg
+  Saved poster: urutora214_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/urutora214/urutora214jp-001.jpg
+  Saved sample: urutora214_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/urutora214/urutora214jp-002.jpg
+  Saved sample: urutora214_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/urutora214/urutora214jp-003.jpg
+  Saved sample: urutora214_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/urutora214/urutora214jp-004.jpg
+  Saved sample: urutora214_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/urutora214/urutora214jp-005.jpg
+  Saved sample: urutora214_05.jpg
+[DOWNLOAD] Asset check for urutora214 complete.
+[OK] merged: urutora214 images=5 review_len=146
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: smgn001
+[OK] daily appended: 20251123.jsonl smgn001
+[RUN] CID=smgn001
+[DOWNLOAD] Checking assets for smgn001...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/smgn001/smgn001jm.jpg
+  Saved poster: smgn001_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smgn001/smgn001jp-001.jpg
+  Saved sample: smgn001_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smgn001/smgn001jp-002.jpg
+  Saved sample: smgn001_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smgn001/smgn001jp-003.jpg
+  Saved sample: smgn001_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smgn001/smgn001jp-004.jpg
+  Saved sample: smgn001_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smgn001/smgn001jp-005.jpg
+  Saved sample: smgn001_05.jpg
+[DOWNLOAD] Asset check for smgn001 complete.
+[OK] merged: smgn001 images=5 review_len=690
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: skoi003
+[OK] daily appended: 20251123.jsonl skoi003
+[RUN] CID=skoi003
+[DOWNLOAD] Checking assets for skoi003...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/skoi003/skoi003jm.jpg
+  Saved poster: skoi003_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/skoi003/skoi003jp-001.jpg
+  Saved sample: skoi003_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/skoi003/skoi003jp-002.jpg
+  Saved sample: skoi003_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/skoi003/skoi003jp-003.jpg
+  Saved sample: skoi003_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/skoi003/skoi003jp-004.jpg
+  Saved sample: skoi003_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/skoi003/skoi003jp-005.jpg
+  Saved sample: skoi003_05.jpg
+[DOWNLOAD] Asset check for skoi003 complete.
+[OK] merged: skoi003 images=5 review_len=209
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: yss124
+[OK] daily appended: 20251123.jsonl yss124
+[RUN] CID=yss124
+[DOWNLOAD] Checking assets for yss124...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/yss124/yss124jm.jpg
+  Saved poster: yss124_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/yss124/yss124jp-001.jpg
+  Saved sample: yss124_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/yss124/yss124jp-002.jpg
+  Saved sample: yss124_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/yss124/yss124jp-003.jpg
+  Saved sample: yss124_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/yss124/yss124jp-004.jpg
+  Saved sample: yss124_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/yss124/yss124jp-005.jpg
+  Saved sample: yss124_05.jpg
+[DOWNLOAD] Asset check for yss124 complete.
+[OK] merged: yss124 images=5 review_len=259
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: bouz007
+[OK] daily appended: 20251123.jsonl bouz007
+[RUN] CID=bouz007
+[DOWNLOAD] Checking assets for bouz007...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/bouz007/bouz007jm.jpg
+  Saved poster: bouz007_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bouz007/bouz007jp-001.jpg
+  Saved sample: bouz007_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bouz007/bouz007jp-002.jpg
+  Saved sample: bouz007_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bouz007/bouz007jp-003.jpg
+  Saved sample: bouz007_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bouz007/bouz007jp-004.jpg
+  Saved sample: bouz007_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bouz007/bouz007jp-005.jpg
+  Saved sample: bouz007_05.jpg
+[DOWNLOAD] Asset check for bouz007 complete.
+[OK] merged: bouz007 images=5 review_len=168
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: smub073
+[OK] daily appended: 20251123.jsonl smub073
+[RUN] CID=smub073
+[DOWNLOAD] Checking assets for smub073...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/smub073/smub073jm.jpg
+  Saved poster: smub073_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smub073/smub073jp-001.jpg
+  Saved sample: smub073_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smub073/smub073jp-002.jpg
+  Saved sample: smub073_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smub073/smub073jp-003.jpg
+  Saved sample: smub073_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smub073/smub073jp-004.jpg
+  Saved sample: smub073_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smub073/smub073jp-005.jpg
+  Saved sample: smub073_05.jpg
+[DOWNLOAD] Asset check for smub073 complete.
+[OK] merged: smub073 images=5 review_len=530
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: smjk133
+[OK] daily appended: 20251123.jsonl smjk133
+[RUN] CID=smjk133
+[DOWNLOAD] Checking assets for smjk133...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/smjk133/smjk133jm.jpg
+  Saved poster: smjk133_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjk133/smjk133jp-001.jpg
+  Saved sample: smjk133_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjk133/smjk133jp-002.jpg
+  Saved sample: smjk133_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjk133/smjk133jp-003.jpg
+  Saved sample: smjk133_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjk133/smjk133jp-004.jpg
+  Saved sample: smjk133_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjk133/smjk133jp-005.jpg
+  Saved sample: smjk133_05.jpg
+[DOWNLOAD] Asset check for smjk133 complete.
+[OK] merged: smjk133 images=5 review_len=266
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: smjx132
+[OK] daily appended: 20251123.jsonl smjx132
+[RUN] CID=smjx132
+[DOWNLOAD] Checking assets for smjx132...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/smjx132/smjx132jm.jpg
+  Saved poster: smjx132_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjx132/smjx132jp-001.jpg
+  Saved sample: smjx132_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjx132/smjx132jp-002.jpg
+  Saved sample: smjx132_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjx132/smjx132jp-003.jpg
+  Saved sample: smjx132_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjx132/smjx132jp-004.jpg
+  Saved sample: smjx132_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjx132/smjx132jp-005.jpg
+  Saved sample: smjx132_05.jpg
+[DOWNLOAD] Asset check for smjx132 complete.
+[OK] merged: smjx132 images=5 review_len=513
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: sima027
+[OK] daily appended: 20251123.jsonl sima027
+[RUN] CID=sima027
+[DOWNLOAD] Checking assets for sima027...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/sima027/sima027jm.jpg
+  Saved poster: sima027_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/sima027/sima027jp-001.jpg
+  Saved sample: sima027_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/sima027/sima027jp-002.jpg
+  Saved sample: sima027_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/sima027/sima027jp-003.jpg
+  Saved sample: sima027_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/sima027/sima027jp-004.jpg
+  Saved sample: sima027_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/sima027/sima027jp-005.jpg
+  Saved sample: sima027_05.jpg
+[DOWNLOAD] Asset check for sima027 complete.
+[OK] merged: sima027 images=5 review_len=172
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: skho200
+[OK] daily appended: 20251123.jsonl skho200
+[RUN] CID=skho200
+[DOWNLOAD] Checking assets for skho200...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/skho200/skho200jm.jpg
+  Saved poster: skho200_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/skho200/skho200jp-001.jpg
+  Saved sample: skho200_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/skho200/skho200jp-002.jpg
+  Saved sample: skho200_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/skho200/skho200jp-003.jpg
+  Saved sample: skho200_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/skho200/skho200jp-004.jpg
+  Saved sample: skho200_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/skho200/skho200jp-005.jpg
+  Saved sample: skho200_05.jpg
+[DOWNLOAD] Asset check for skho200 complete.
+[OK] merged: skho200 images=5 review_len=414
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: snp0002
+[OK] daily appended: 20251123.jsonl snp0002
+[RUN] CID=snp0002
+[DOWNLOAD] Checking assets for snp0002...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/snp0002/snp0002jm.jpg
+  Saved poster: snp0002_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/snp0002/snp0002jp-001.jpg
+  Saved sample: snp0002_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/snp0002/snp0002jp-002.jpg
+  Saved sample: snp0002_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/snp0002/snp0002jp-003.jpg
+  Saved sample: snp0002_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/snp0002/snp0002jp-004.jpg
+  Saved sample: snp0002_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/snp0002/snp0002jp-005.jpg
+  Saved sample: snp0002_05.jpg
+[DOWNLOAD] Asset check for snp0002 complete.
+[OK] merged: snp0002 images=5 review_len=372
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: smjs199
+[OK] daily appended: 20251124.jsonl smjs199
+[RUN] CID=smjs199
+[DOWNLOAD] Checking assets for smjs199...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/smjs199/smjs199jm.jpg
+  Saved poster: smjs199_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs199/smjs199jp-001.jpg
+  Saved sample: smjs199_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs199/smjs199jp-002.jpg
+  Saved sample: smjs199_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs199/smjs199jp-003.jpg
+  Saved sample: smjs199_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs199/smjs199jp-004.jpg
+  Saved sample: smjs199_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs199/smjs199jp-005.jpg
+  Saved sample: smjs199_05.jpg
+[DOWNLOAD] Asset check for smjs199 complete.
+[OK] merged: smjs199 images=5 review_len=796
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: smjk134
+[OK] daily appended: 20251124.jsonl smjk134
+[RUN] CID=smjk134
+[DOWNLOAD] Checking assets for smjk134...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/smjk134/smjk134jm.jpg
+  Saved poster: smjk134_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjk134/smjk134jp-001.jpg
+  Saved sample: smjk134_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjk134/smjk134jp-002.jpg
+  Saved sample: smjk134_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjk134/smjk134jp-003.jpg
+  Saved sample: smjk134_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjk134/smjk134jp-004.jpg
+  Saved sample: smjk134_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjk134/smjk134jp-005.jpg
+  Saved sample: smjk134_05.jpg
+[DOWNLOAD] Asset check for smjk134 complete.
+[OK] merged: smjk134 images=5 review_len=605
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: syuk014
+[OK] daily appended: 20251125.jsonl syuk014
+[RUN] CID=syuk014
+[DOWNLOAD] Checking assets for syuk014...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/syuk014/syuk014jm.jpg
+  Saved poster: syuk014_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/syuk014/syuk014jp-001.jpg
+  Saved sample: syuk014_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/syuk014/syuk014jp-002.jpg
+  Saved sample: syuk014_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/syuk014/syuk014jp-003.jpg
+  Saved sample: syuk014_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/syuk014/syuk014jp-004.jpg
+  Saved sample: syuk014_04.jpg
+[DOWNLOAD] Asset check for syuk014 complete.
+[OK] merged: syuk014 images=4 review_len=259
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: mfcs187
+[OK] daily appended: 20251125.jsonl mfcs187
+[RUN] CID=mfcs187
+[DOWNLOAD] Checking assets for mfcs187...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/mfcs187/mfcs187jm.jpg
+  Saved poster: mfcs187_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mfcs187/mfcs187jp-001.jpg
+  Saved sample: mfcs187_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mfcs187/mfcs187jp-002.jpg
+  Saved sample: mfcs187_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mfcs187/mfcs187jp-003.jpg
+  Saved sample: mfcs187_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mfcs187/mfcs187jp-004.jpg
+  Saved sample: mfcs187_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mfcs187/mfcs187jp-005.jpg
+  Saved sample: mfcs187_05.jpg
+[DOWNLOAD] Asset check for mfcs187 complete.
+[OK] merged: mfcs187 images=5 review_len=760
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: smjs216
+[OK] daily appended: 20251125.jsonl smjs216
+[RUN] CID=smjs216
+[DOWNLOAD] Checking assets for smjs216...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/smjs216/smjs216jm.jpg
+  Saved poster: smjs216_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs216/smjs216jp-001.jpg
+  Saved sample: smjs216_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs216/smjs216jp-002.jpg
+  Saved sample: smjs216_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs216/smjs216jp-003.jpg
+  Saved sample: smjs216_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs216/smjs216jp-004.jpg
+  Saved sample: smjs216_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs216/smjs216jp-005.jpg
+  Saved sample: smjs216_05.jpg
+[DOWNLOAD] Asset check for smjs216 complete.
+[OK] merged: smjs216 images=5 review_len=981
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: smjx101
+[OK] daily appended: 20251125.jsonl smjx101
+[RUN] CID=smjx101
+[DOWNLOAD] Checking assets for smjx101...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/smjx101/smjx101jm.jpg
+  Saved poster: smjx101_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjx101/smjx101jp-001.jpg
+  Saved sample: smjx101_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjx101/smjx101jp-002.jpg
+  Saved sample: smjx101_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjx101/smjx101jp-003.jpg
+  Saved sample: smjx101_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjx101/smjx101jp-004.jpg
+  Saved sample: smjx101_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjx101/smjx101jp-005.jpg
+  Saved sample: smjx101_05.jpg
+[DOWNLOAD] Asset check for smjx101 complete.
+[OK] merged: smjx101 images=5 review_len=447
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: smjp065
+[OK] daily appended: 20251125.jsonl smjp065
+[RUN] CID=smjp065
+[DOWNLOAD] Checking assets for smjp065...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/smjp065/smjp065jm.jpg
+  Saved poster: smjp065_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjp065/smjp065jp-001.jpg
+  Saved sample: smjp065_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjp065/smjp065jp-002.jpg
+  Saved sample: smjp065_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjp065/smjp065jp-003.jpg
+  Saved sample: smjp065_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjp065/smjp065jp-004.jpg
+  Saved sample: smjp065_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjp065/smjp065jp-005.jpg
+  Saved sample: smjp065_05.jpg
+[DOWNLOAD] Asset check for smjp065 complete.
+[OK] merged: smjp065 images=5 review_len=556
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: orecz345
+[OK] daily appended: 20251125.jsonl orecz345
+[RUN] CID=orecz345
+[DOWNLOAD] Checking assets for orecz345...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/orecz345/orecz345jm.jpg
+  Saved poster: orecz345_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/orecz345/orecz345jp-001.jpg
+  Saved sample: orecz345_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/orecz345/orecz345jp-002.jpg
+  Saved sample: orecz345_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/orecz345/orecz345jp-003.jpg
+  Saved sample: orecz345_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/orecz345/orecz345jp-004.jpg
+  Saved sample: orecz345_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/orecz345/orecz345jp-005.jpg
+  Saved sample: orecz345_05.jpg
+[DOWNLOAD] Asset check for orecz345 complete.
+[OK] merged: orecz345 images=5 review_len=155
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: instc661
+[OK] daily appended: 20251125.jsonl instc661
+[RUN] CID=instc661
+[DOWNLOAD] Checking assets for instc661...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/instc661/instc661jm.jpg
+  Saved poster: instc661_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/instc661/instc661jp-001.jpg
+  Saved sample: instc661_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/instc661/instc661jp-002.jpg
+  Saved sample: instc661_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/instc661/instc661jp-003.jpg
+  Saved sample: instc661_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/instc661/instc661jp-004.jpg
+  Saved sample: instc661_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/instc661/instc661jp-005.jpg
+  Saved sample: instc661_05.jpg
+[DOWNLOAD] Asset check for instc661 complete.
+[OK] merged: instc661 images=5 review_len=138
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: habj084
+[OK] daily appended: 20251125.jsonl habj084
+[RUN] CID=habj084
+[DOWNLOAD] Checking assets for habj084...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/habj084/habj084jm.jpg
+  Saved poster: habj084_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/habj084/habj084jp-001.jpg
+  Saved sample: habj084_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/habj084/habj084jp-002.jpg
+  Saved sample: habj084_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/habj084/habj084jp-003.jpg
+  Saved sample: habj084_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/habj084/habj084jp-004.jpg
+  Saved sample: habj084_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/habj084/habj084jp-005.jpg
+  Saved sample: habj084_05.jpg
+[DOWNLOAD] Asset check for habj084 complete.
+[OK] merged: habj084 images=5 review_len=1755
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: ends257
+[OK] daily appended: 20251125.jsonl ends257
+[RUN] CID=ends257
+[DOWNLOAD] Checking assets for ends257...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/ends257/ends257jm.jpg
+  Saved poster: ends257_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/ends257/ends257jp-001.jpg
+  Saved sample: ends257_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/ends257/ends257jp-002.jpg
+  Saved sample: ends257_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/ends257/ends257jp-003.jpg
+  Saved sample: ends257_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/ends257/ends257jp-004.jpg
+  Saved sample: ends257_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/ends257/ends257jp-005.jpg
+  Saved sample: ends257_05.jpg
+[DOWNLOAD] Asset check for ends257 complete.
+[OK] merged: ends257 images=5 review_len=48
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: mfc350
+[OK] daily appended: 20251126.jsonl mfc350
+[RUN] CID=mfc350
+[DOWNLOAD] Checking assets for mfc350...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/mfc350/mfc350jm.jpg
+  Saved poster: mfc350_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mfc350/mfc350jp-001.jpg
+  Saved sample: mfc350_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mfc350/mfc350jp-002.jpg
+  Saved sample: mfc350_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mfc350/mfc350jp-003.jpg
+  Saved sample: mfc350_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mfc350/mfc350jp-004.jpg
+  Saved sample: mfc350_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mfc350/mfc350jp-005.jpg
+  Saved sample: mfc350_05.jpg
+[DOWNLOAD] Asset check for mfc350 complete.
+[OK] merged: mfc350 images=5 review_len=303
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: mgsod023
+[OK] daily appended: 20251126.jsonl mgsod023
+[RUN] CID=mgsod023
+[DOWNLOAD] Checking assets for mgsod023...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/mgsod023/mgsod023jm.jpg
+  Saved poster: mgsod023_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mgsod023/mgsod023jp-001.jpg
+  Saved sample: mgsod023_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mgsod023/mgsod023jp-002.jpg
+  Saved sample: mgsod023_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mgsod023/mgsod023jp-003.jpg
+  Saved sample: mgsod023_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mgsod023/mgsod023jp-004.jpg
+  Saved sample: mgsod023_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mgsod023/mgsod023jp-005.jpg
+  Saved sample: mgsod023_05.jpg
+[DOWNLOAD] Asset check for mgsod023 complete.
+[OK] merged: mgsod023 images=5 review_len=146
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: smjs208
+[OK] daily appended: 20251126.jsonl smjs208
+[RUN] CID=smjs208
+[DOWNLOAD] Checking assets for smjs208...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/smjs208/smjs208jm.jpg
+  Saved poster: smjs208_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs208/smjs208jp-001.jpg
+  Saved sample: smjs208_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs208/smjs208jp-002.jpg
+  Saved sample: smjs208_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs208/smjs208jp-003.jpg
+  Saved sample: smjs208_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs208/smjs208jp-004.jpg
+  Saved sample: smjs208_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs208/smjs208jp-005.jpg
+  Saved sample: smjs208_05.jpg
+[DOWNLOAD] Asset check for smjs208 complete.
+[OK] merged: smjs208 images=5 review_len=758
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: tkk075
+[OK] daily appended: 20251126.jsonl tkk075
+[RUN] CID=tkk075
+[DOWNLOAD] Checking assets for tkk075...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/tkk075/tkk075jm.jpg
+  Saved poster: tkk075_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/tkk075/tkk075jp-001.jpg
+  Saved sample: tkk075_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/tkk075/tkk075jp-002.jpg
+  Saved sample: tkk075_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/tkk075/tkk075jp-003.jpg
+  Saved sample: tkk075_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/tkk075/tkk075jp-004.jpg
+  Saved sample: tkk075_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/tkk075/tkk075jp-005.jpg
+  Saved sample: tkk075_05.jpg
+[DOWNLOAD] Asset check for tkk075 complete.
+[OK] merged: tkk075 images=5 review_len=278
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: dam063
+[OK] daily appended: 20251126.jsonl dam063
+[RUN] CID=dam063
+[DOWNLOAD] Checking assets for dam063...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/dam063/dam063jm.jpg
+  Saved poster: dam063_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/dam063/dam063jp-001.jpg
+  Saved sample: dam063_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/dam063/dam063jp-002.jpg
+  Saved sample: dam063_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/dam063/dam063jp-003.jpg
+  Saved sample: dam063_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/dam063/dam063jp-004.jpg
+  Saved sample: dam063_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/dam063/dam063jp-005.jpg
+  Saved sample: dam063_05.jpg
+[DOWNLOAD] Asset check for dam063 complete.
+[OK] merged: dam063 images=5 review_len=1690
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: pai171
+[OK] daily appended: 20251126.jsonl pai171
+[RUN] CID=pai171
+[DOWNLOAD] Checking assets for pai171...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/pai171/pai171jm.jpg
+  Saved poster: pai171_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/pai171/pai171jp-001.jpg
+  Saved sample: pai171_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/pai171/pai171jp-002.jpg
+  Saved sample: pai171_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/pai171/pai171jp-003.jpg
+  Saved sample: pai171_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/pai171/pai171jp-004.jpg
+  Saved sample: pai171_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/pai171/pai171jp-005.jpg
+  Saved sample: pai171_05.jpg
+[DOWNLOAD] Asset check for pai171 complete.
+[OK] merged: pai171 images=5 review_len=345
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: msodn020
+[OK] daily appended: 20251126.jsonl msodn020
+[RUN] CID=msodn020
+[DOWNLOAD] Checking assets for msodn020...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/msodn020/msodn020jm.jpg
+  Saved poster: msodn020_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/msodn020/msodn020jp-001.jpg
+  Saved sample: msodn020_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/msodn020/msodn020jp-002.jpg
+  Saved sample: msodn020_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/msodn020/msodn020jp-003.jpg
+  Saved sample: msodn020_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/msodn020/msodn020jp-004.jpg
+  Saved sample: msodn020_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/msodn020/msodn020jp-005.jpg
+  Saved sample: msodn020_05.jpg
+[DOWNLOAD] Asset check for msodn020 complete.
+[OK] merged: msodn020 images=5 review_len=0
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: orecz346
+[OK] daily appended: 20251126.jsonl orecz346
+[RUN] CID=orecz346
+[DOWNLOAD] Checking assets for orecz346...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/orecz346/orecz346jm.jpg
+  Saved poster: orecz346_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/orecz346/orecz346jp-001.jpg
+  Saved sample: orecz346_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/orecz346/orecz346jp-002.jpg
+  Saved sample: orecz346_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/orecz346/orecz346jp-003.jpg
+  Saved sample: orecz346_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/orecz346/orecz346jp-004.jpg
+  Saved sample: orecz346_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/orecz346/orecz346jp-005.jpg
+  Saved sample: orecz346_05.jpg
+[DOWNLOAD] Asset check for orecz346 complete.
+[OK] merged: orecz346 images=5 review_len=154
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: hmdnc877
+[OK] daily appended: 20251126.jsonl hmdnc877
+[RUN] CID=hmdnc877
+[DOWNLOAD] Checking assets for hmdnc877...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/hmdnc877/hmdnc877jm.jpg
+  Saved poster: hmdnc877_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hmdnc877/hmdnc877jp-001.jpg
+  Saved sample: hmdnc877_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hmdnc877/hmdnc877jp-002.jpg
+  Saved sample: hmdnc877_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hmdnc877/hmdnc877jp-003.jpg
+  Saved sample: hmdnc877_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hmdnc877/hmdnc877jp-004.jpg
+  Saved sample: hmdnc877_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hmdnc877/hmdnc877jp-005.jpg
+  Saved sample: hmdnc877_05.jpg
+[DOWNLOAD] Asset check for hmdnc877 complete.
+[OK] merged: hmdnc877 images=5 review_len=238
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: msods018
+[OK] daily appended: 20251126.jsonl msods018
+[RUN] CID=msods018
+[DOWNLOAD] Checking assets for msods018...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/msods018/msods018jm.jpg
+  Saved poster: msods018_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/msods018/msods018jp-001.jpg
+  Saved sample: msods018_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/msods018/msods018jp-002.jpg
+  Saved sample: msods018_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/msods018/msods018jp-003.jpg
+  Saved sample: msods018_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/msods018/msods018jp-004.jpg
+  Saved sample: msods018_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/msods018/msods018jp-005.jpg
+  Saved sample: msods018_05.jpg
+[DOWNLOAD] Asset check for msods018 complete.
+[OK] merged: msods018 images=5 review_len=122
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: syuk015
+[OK] daily appended: 20251128.jsonl syuk015
+[RUN] CID=syuk015
+[DOWNLOAD] Checking assets for syuk015...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/syuk015/syuk015jm.jpg
+  Saved poster: syuk015_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/syuk015/syuk015jp-001.jpg
+  Saved sample: syuk015_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/syuk015/syuk015jp-002.jpg
+  Saved sample: syuk015_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/syuk015/syuk015jp-003.jpg
+  Saved sample: syuk015_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/syuk015/syuk015jp-004.jpg
+  Saved sample: syuk015_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/syuk015/syuk015jp-005.jpg
+  Saved sample: syuk015_05.jpg
+[DOWNLOAD] Asset check for syuk015 complete.
+[OK] merged: syuk015 images=5 review_len=376
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: bouz008
+[OK] daily appended: 20251128.jsonl bouz008
+[RUN] CID=bouz008
+[DOWNLOAD] Checking assets for bouz008...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/bouz008/bouz008jm.jpg
+  Saved poster: bouz008_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bouz008/bouz008jp-001.jpg
+  Saved sample: bouz008_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bouz008/bouz008jp-002.jpg
+  Saved sample: bouz008_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bouz008/bouz008jp-003.jpg
+  Saved sample: bouz008_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bouz008/bouz008jp-004.jpg
+  Saved sample: bouz008_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bouz008/bouz008jp-005.jpg
+  Saved sample: bouz008_05.jpg
+[DOWNLOAD] Asset check for bouz008 complete.
+[OK] merged: bouz008 images=5 review_len=166
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: grsp021
+[OK] daily appended: 20251128.jsonl grsp021
+[RUN] CID=grsp021
+[DOWNLOAD] Checking assets for grsp021...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/grsp021/grsp021jm.jpg
+  Saved poster: grsp021_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/grsp021/grsp021jp-001.jpg
+  Saved sample: grsp021_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/grsp021/grsp021jp-002.jpg
+  Saved sample: grsp021_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/grsp021/grsp021jp-003.jpg
+  Saved sample: grsp021_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/grsp021/grsp021jp-004.jpg
+  Saved sample: grsp021_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/grsp021/grsp021jp-005.jpg
+  Saved sample: grsp021_05.jpg
+[DOWNLOAD] Asset check for grsp021 complete.
+[OK] merged: grsp021 images=5 review_len=486
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: ankk133
+[OK] daily appended: 20251128.jsonl ankk133
+[RUN] CID=ankk133
+[DOWNLOAD] Checking assets for ankk133...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/ankk133/ankk133jm.jpg
+  Saved poster: ankk133_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/ankk133/ankk133jp-001.jpg
+  Saved sample: ankk133_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/ankk133/ankk133jp-002.jpg
+  Saved sample: ankk133_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/ankk133/ankk133jp-003.jpg
+  Saved sample: ankk133_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/ankk133/ankk133jp-004.jpg
+  Saved sample: ankk133_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/ankk133/ankk133jp-005.jpg
+  Saved sample: ankk133_05.jpg
+[DOWNLOAD] Asset check for ankk133 complete.
+[OK] merged: ankk133 images=5 review_len=1904
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: bskc114
+[OK] daily appended: 20251128.jsonl bskc114
+[RUN] CID=bskc114
+[DOWNLOAD] Checking assets for bskc114...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/bskc114/bskc114jm.jpg
+  Saved poster: bskc114_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bskc114/bskc114jp-001.jpg
+  Saved sample: bskc114_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bskc114/bskc114jp-002.jpg
+  Saved sample: bskc114_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bskc114/bskc114jp-003.jpg
+  Saved sample: bskc114_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bskc114/bskc114jp-004.jpg
+  Saved sample: bskc114_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/bskc114/bskc114jp-005.jpg
+  Saved sample: bskc114_05.jpg
+[DOWNLOAD] Asset check for bskc114 complete.
+[OK] merged: bskc114 images=5 review_len=583
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: hpt060
+[OK] daily appended: 20251129.jsonl hpt060
+[RUN] CID=hpt060
+[DOWNLOAD] Checking assets for hpt060...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/hpt060/hpt060jm.jpg
+  Saved poster: hpt060_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hpt060/hpt060jp-001.jpg
+  Saved sample: hpt060_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hpt060/hpt060jp-002.jpg
+  Saved sample: hpt060_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hpt060/hpt060jp-003.jpg
+  Saved sample: hpt060_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hpt060/hpt060jp-004.jpg
+  Saved sample: hpt060_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hpt060/hpt060jp-005.jpg
+  Saved sample: hpt060_05.jpg
+[DOWNLOAD] Asset check for hpt060 complete.
+[OK] merged: hpt060 images=5 review_len=413
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: fuyu183
+[OK] daily appended: 20251129.jsonl fuyu183
+[RUN] CID=fuyu183
+[DOWNLOAD] Checking assets for fuyu183...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/fuyu183/fuyu183jm.jpg
+  Saved poster: fuyu183_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/fuyu183/fuyu183jp-001.jpg
+  Saved sample: fuyu183_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/fuyu183/fuyu183jp-002.jpg
+  Saved sample: fuyu183_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/fuyu183/fuyu183jp-003.jpg
+  Saved sample: fuyu183_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/fuyu183/fuyu183jp-004.jpg
+  Saved sample: fuyu183_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/fuyu183/fuyu183jp-005.jpg
+  Saved sample: fuyu183_05.jpg
+[DOWNLOAD] Asset check for fuyu183 complete.
+[OK] merged: fuyu183 images=5 review_len=272
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: simw002
+[OK] daily appended: 20251129.jsonl simw002
+[RUN] CID=simw002
+[DOWNLOAD] Checking assets for simw002...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/simw002/simw002jm.jpg
+  Saved poster: simw002_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/simw002/simw002jp-001.jpg
+  Saved sample: simw002_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/simw002/simw002jp-002.jpg
+  Saved sample: simw002_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/simw002/simw002jp-003.jpg
+  Saved sample: simw002_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/simw002/simw002jp-004.jpg
+  Saved sample: simw002_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/simw002/simw002jp-005.jpg
+  Saved sample: simw002_05.jpg
+[DOWNLOAD] Asset check for simw002 complete.
+[OK] merged: simw002 images=5 review_len=225
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: smub076
+[OK] daily appended: 20251129.jsonl smub076
+[RUN] CID=smub076
+[DOWNLOAD] Checking assets for smub076...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/smub076/smub076jm.jpg
+  Saved poster: smub076_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smub076/smub076jp-001.jpg
+  Saved sample: smub076_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smub076/smub076jp-002.jpg
+  Saved sample: smub076_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smub076/smub076jp-003.jpg
+  Saved sample: smub076_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smub076/smub076jp-004.jpg
+  Saved sample: smub076_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smub076/smub076jp-005.jpg
+  Saved sample: smub076_05.jpg
+[DOWNLOAD] Asset check for smub076 complete.
+[OK] merged: smub076 images=5 review_len=407
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: hpt061
+[OK] daily appended: 20251130.jsonl hpt061
+[RUN] CID=hpt061
+[DOWNLOAD] Checking assets for hpt061...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/hpt061/hpt061jm.jpg
+  Saved poster: hpt061_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hpt061/hpt061jp-001.jpg
+  Saved sample: hpt061_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hpt061/hpt061jp-002.jpg
+  Saved sample: hpt061_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hpt061/hpt061jp-003.jpg
+  Saved sample: hpt061_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hpt061/hpt061jp-004.jpg
+  Saved sample: hpt061_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/hpt061/hpt061jp-005.jpg
+  Saved sample: hpt061_05.jpg
+[DOWNLOAD] Asset check for hpt061 complete.
+[OK] merged: hpt061 images=5 review_len=655
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: tow035
+[OK] daily appended: 20251201.jsonl tow035
+[RUN] CID=tow035
+[DOWNLOAD] Checking assets for tow035...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/tow035/tow035jm.jpg
+  Saved poster: tow035_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/tow035/tow035jp-001.jpg
+  Saved sample: tow035_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/tow035/tow035jp-002.jpg
+  Saved sample: tow035_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/tow035/tow035jp-003.jpg
+  Saved sample: tow035_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/tow035/tow035jp-004.jpg
+  Saved sample: tow035_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/tow035/tow035jp-005.jpg
+  Saved sample: tow035_05.jpg
+[DOWNLOAD] Asset check for tow035 complete.
+[OK] merged: tow035 images=5 review_len=608
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: syuk016
+[OK] daily appended: 20251201.jsonl syuk016
+[RUN] CID=syuk016
+[DOWNLOAD] Checking assets for syuk016...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/syuk016/syuk016jm.jpg
+  Saved poster: syuk016_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/syuk016/syuk016jp-001.jpg
+  Saved sample: syuk016_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/syuk016/syuk016jp-002.jpg
+  Saved sample: syuk016_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/syuk016/syuk016jp-003.jpg
+  Saved sample: syuk016_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/syuk016/syuk016jp-004.jpg
+  Saved sample: syuk016_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/syuk016/syuk016jp-005.jpg
+  Saved sample: syuk016_05.jpg
+[DOWNLOAD] Asset check for syuk016 complete.
+[OK] merged: syuk016 images=5 review_len=299
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: tow036
+[OK] daily appended: 20251202.jsonl tow036
+[RUN] CID=tow036
+[DOWNLOAD] Checking assets for tow036...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/tow036/tow036jm.jpg
+  Saved poster: tow036_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/tow036/tow036jp-001.jpg
+  Saved sample: tow036_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/tow036/tow036jp-002.jpg
+  Saved sample: tow036_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/tow036/tow036jp-003.jpg
+  Saved sample: tow036_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/tow036/tow036jp-004.jpg
+  Saved sample: tow036_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/tow036/tow036jp-005.jpg
+  Saved sample: tow036_05.jpg
+[DOWNLOAD] Asset check for tow036 complete.
+[OK] merged: tow036 images=5 review_len=700
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: mfcs188
+[OK] daily appended: 20251202.jsonl mfcs188
+[RUN] CID=mfcs188
+[DOWNLOAD] Checking assets for mfcs188...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/mfcs188/mfcs188jm.jpg
+  Saved poster: mfcs188_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mfcs188/mfcs188jp-001.jpg
+  Saved sample: mfcs188_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mfcs188/mfcs188jp-002.jpg
+  Saved sample: mfcs188_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mfcs188/mfcs188jp-003.jpg
+  Saved sample: mfcs188_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mfcs188/mfcs188jp-004.jpg
+  Saved sample: mfcs188_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/mfcs188/mfcs188jp-005.jpg
+  Saved sample: mfcs188_05.jpg
+[DOWNLOAD] Asset check for mfcs188 complete.
+[OK] merged: mfcs188 images=5 review_len=805
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: smuw054
+[OK] daily appended: 20251202.jsonl smuw054
+[RUN] CID=smuw054
+[DOWNLOAD] Checking assets for smuw054...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/smuw054/smuw054jm.jpg
+  Saved poster: smuw054_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuw054/smuw054jp-001.jpg
+  Saved sample: smuw054_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuw054/smuw054jp-002.jpg
+  Saved sample: smuw054_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuw054/smuw054jp-003.jpg
+  Saved sample: smuw054_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuw054/smuw054jp-004.jpg
+  Saved sample: smuw054_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smuw054/smuw054jp-005.jpg
+  Saved sample: smuw054_05.jpg
+[DOWNLOAD] Asset check for smuw054 complete.
+[OK] merged: smuw054 images=5 review_len=883
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: smjs224
+[OK] daily appended: 20251202.jsonl smjs224
+[RUN] CID=smjs224
+[DOWNLOAD] Checking assets for smjs224...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/smjs224/smjs224jm.jpg
+  Saved poster: smjs224_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs224/smjs224jp-001.jpg
+  Saved sample: smjs224_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs224/smjs224jp-002.jpg
+  Saved sample: smjs224_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs224/smjs224jp-003.jpg
+  Saved sample: smjs224_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs224/smjs224jp-004.jpg
+  Saved sample: smjs224_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjs224/smjs224jp-005.jpg
+  Saved sample: smjs224_05.jpg
+[DOWNLOAD] Asset check for smjs224 complete.
+[OK] merged: smjs224 images=5 review_len=547
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: smjx136
+[OK] daily appended: 20251202.jsonl smjx136
+[RUN] CID=smjx136
+[DOWNLOAD] Checking assets for smjx136...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/smjx136/smjx136jm.jpg
+  Saved poster: smjx136_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjx136/smjx136jp-001.jpg
+  Saved sample: smjx136_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjx136/smjx136jp-002.jpg
+  Saved sample: smjx136_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjx136/smjx136jp-003.jpg
+  Saved sample: smjx136_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjx136/smjx136jp-004.jpg
+  Saved sample: smjx136_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/smjx136/smjx136jp-005.jpg
+  Saved sample: smjx136_05.jpg
+[DOWNLOAD] Asset check for smjx136 complete.
+[OK] merged: smjx136 images=5 review_len=520
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: spay685
+[OK] daily appended: 20251202.jsonl spay685
+[RUN] CID=spay685
+[DOWNLOAD] Checking assets for spay685...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/spay685/spay685jm.jpg
+  Saved poster: spay685_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/spay685/spay685jp-001.jpg
+  Saved sample: spay685_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/spay685/spay685jp-002.jpg
+  Saved sample: spay685_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/spay685/spay685jp-003.jpg
+  Saved sample: spay685_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/spay685/spay685jp-004.jpg
+  Saved sample: spay685_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/spay685/spay685jp-005.jpg
+  Saved sample: spay685_05.jpg
+[DOWNLOAD] Asset check for spay685 complete.
+[OK] merged: spay685 images=5 review_len=120
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: oremo459
+[OK] daily appended: 20251202.jsonl oremo459
+[RUN] CID=oremo459
+[DOWNLOAD] Checking assets for oremo459...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/oremo459/oremo459jm.jpg
+  Saved poster: oremo459_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/oremo459/oremo459jp-001.jpg
+  Saved sample: oremo459_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/oremo459/oremo459jp-002.jpg
+  Saved sample: oremo459_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/oremo459/oremo459jp-003.jpg
+  Saved sample: oremo459_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/oremo459/oremo459jp-004.jpg
+  Saved sample: oremo459_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/oremo459/oremo459jp-005.jpg
+  Saved sample: oremo459_05.jpg
+[DOWNLOAD] Asset check for oremo459 complete.
+[OK] merged: oremo459 images=5 review_len=242
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: nost148
+[OK] daily appended: 20251202.jsonl nost148
+[RUN] CID=nost148
+[DOWNLOAD] Checking assets for nost148...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/nost148/nost148jm.jpg
+  Saved poster: nost148_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/nost148/nost148jp-001.jpg
+  Saved sample: nost148_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/nost148/nost148jp-002.jpg
+  Saved sample: nost148_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/nost148/nost148jp-003.jpg
+  Saved sample: nost148_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/nost148/nost148jp-004.jpg
+  Saved sample: nost148_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/nost148/nost148jp-005.jpg
+  Saved sample: nost148_05.jpg
+[DOWNLOAD] Asset check for nost148 complete.
+[OK] merged: nost148 images=5 review_len=119
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: gerk674
+[OK] daily appended: 20251202.jsonl gerk674
+[RUN] CID=gerk674
+[DOWNLOAD] Checking assets for gerk674...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/gerk674/gerk674jm.jpg
+  Saved poster: gerk674_poster.jpg
+[DOWNLOAD] Asset check for gerk674 complete.
+[OK] merged: gerk674 images=0 review_len=164
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: srom161
+[OK] daily appended: 20251202.jsonl srom161
+[RUN] CID=srom161
+[DOWNLOAD] Checking assets for srom161...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/srom161/srom161jm.jpg
+  Saved poster: srom161_poster.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/srom161/srom161jp-001.jpg
+  Saved sample: srom161_01.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/srom161/srom161jp-002.jpg
+  Saved sample: srom161_02.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/srom161/srom161jp-003.jpg
+  Saved sample: srom161_03.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/srom161/srom161jp-004.jpg
+  Saved sample: srom161_04.jpg
+  Downloading: https://awsimgsrc.dmm.co.jp/pics_dig/digital/amateur/srom161/srom161jp-005.jpg
+  Saved sample: srom161_05.jpg
+[DOWNLOAD] Asset check for srom161 complete.
+[OK] merged: srom161 images=5 review_len=1717
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt

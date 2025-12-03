@@ -1,0 +1,336 @@
+{% load post_filters %}
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>無料素人ハメ撮り動画集</title>
+    <meta name="description" content="素人ハメ撮りレビューの最新記事と、閲覧数の多い人気レビューをまとめています。">
+
+    <style>
+        :root {
+            --primary: #ff4081;
+            --primary-dark: #f50057;
+            --text: #333;
+            --border: #e5e5e5;
+            --bg: #f5f5f5;
+        }
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        /* 上部タイトルバー */
+        .site-header {
+            background: var(--primary);
+            color: #fff;
+            padding: 14px 24px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .site-header span {
+            font-size: 14px;
+            margin-left: 8px;
+            opacity: 0.85;
+        }
+
+        /* ページレイアウト */
+        .page-wrap {
+            max-width: 1200px;
+            margin: 32px auto 48px;
+            padding: 0 16px;
+            display: grid;
+            grid-template-columns: 3fr minmax(260px, 340px);
+            gap: 32px;
+            align-items: flex-start;
+        }
+
+        .main h1 {
+            font-size: 24px;
+            margin: 0 0 20px;
+        }
+
+        /* 一覧カード */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
+        }
+        .post-card {
+            display: block;
+            background: #fff;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.04);
+            transition: transform 0.1s, box-shadow 0.1s;
+        }
+        .post-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+        }
+        .post-thumb {
+            width: 100%;
+            padding-top: 66%;
+            position: relative;
+            overflow: hidden;
+        }
+        .post-thumb img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .post-body {
+            padding: 10px 14px 14px;
+        }
+        .post-title {
+            font-size: 15px;
+            font-weight: bold;
+            color: var(--primary-dark);
+            margin: 0 0 4px;
+        }
+        .post-sizes {
+            margin-left: 4px;
+            font-weight: normal;
+            font-size: 13px;
+            color: var(--primary-dark);
+        }
+        .post-excerpt {
+            margin: 4px 0 0;
+            font-size: 13px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* サイドバー共通 */
+        .sidebar-section {
+            background: #fff;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            padding: 16px 18px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.03);
+        }
+        .sidebar-section + .sidebar-section {
+            margin-top: 16px;
+        }
+        .sidebar-title {
+            margin: 0 0 12px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        /* 検索ボックス */
+        .search-form {
+            display: flex;
+            gap: 8px;
+        }
+        .search-input {
+            flex: 1;
+            border-radius: 999px;
+            border: 1px solid var(--border);
+            padding: 8px 12px;
+            font-size: 14px;
+        }
+        .search-button {
+            border-radius: 999px;
+            border: none;
+            background: var(--primary);
+            color: #fff;
+            font-size: 14px;
+            padding: 8px 18px;
+            cursor: pointer;
+        }
+        .search-button:hover {
+            background: var(--primary-dark);
+        }
+
+        /* 人気ランキング */
+        .ranking-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+        .ranking-header .sidebar-title {
+            margin: 0;
+        }
+        .ranking-note {
+            font-size: 12px;
+            color: #777;
+            margin: 0 0 10px;
+        }
+        .ranking-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .ranking-item {
+            display: flex;
+            gap: 10px;
+            text-decoration: none;
+            color: inherit;
+            border-radius: 10px;
+            padding: 6px 6px 6px 0;
+            transition: background 0.1s, transform 0.1s;
+        }
+        .ranking-item:hover {
+            background: #fff5fa;
+            transform: translateX(2px);
+        }
+        .ranking-thumb {
+            flex: 0 0 86px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .ranking-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .ranking-meta {
+            flex: 1;
+            min-width: 0;
+        }
+        .ranking-position {
+            font-size: 11px;
+            color: var(--primary-dark);
+            margin-bottom: 2px;
+        }
+        .ranking-title {
+            font-size: 13px;
+            font-weight: bold;
+            margin: 0 0 2px;
+        }
+        .ranking-excerpt {
+            font-size: 12px;
+            color: #666;
+            margin: 0;
+        }
+
+        /* レスポンシブ */
+        @media (max-width: 1024px) {
+            .page-wrap {
+                grid-template-columns: 1fr;
+            }
+            .card-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+        @media (max-width: 640px) {
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+<header class="site-header">
+    無料素人ハメ撮り動画集
+    <span></span>
+</header>
+
+<div class="page-wrap">
+    <main class="main">
+        <h1></h1>
+
+        {% if posts %}
+            <div class="card-grid">
+                {% for post in posts %}
+                <a href="{% url 'post_detail' post.cid %}" class="post-card">
+                    <div class="post-thumb">
+                        <img src="/media/{{ post.cid }}_01.jpg"
+                             alt="{{ post.name|default:post.title }}"
+                             loading="lazy" referrerpolicy="no-referrer">
+                    </div>
+                    <div class="post-body">
+                        <p class="post-title">
+                            {% if post.name %}
+                                {{ post.name }}{% if post.age %}({{ post.age }}){% endif %}
+                            {% else %}
+                                {{ post.title }}
+                            {% endif %}
+                            {% if post.sizes %}
+                                <span class="post-sizes">{{ post.sizes }}</span>
+                            {% elif post.bust and post.waist and post.hip %}
+                                <span class="post-sizes">B{{ post.bust }} W{{ post.waist }} H{{ post.hip }}</span>
+                            {% endif %}
+                        </p>
+                        {% with src=post.review|default:post.review_body %}
+                            {% if src %}
+                                <p class="post-excerpt">
+                                    {{ src|review_excerpt:62 }}・・・
+                                </p>
+                            {% endif %}
+                        {% endwith %}
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p>まだ記事がありません。</p>
+        {% endif %}
+    </main>
+
+    <aside class="sidebar">
+        <section class="sidebar-section">
+            <h2 class="sidebar-title">サイト内検索</h2>
+            <form action="{% url 'post_index' %}" method="get" class="search-form">
+                <input type="text" name="q" value="{{ query }}" placeholder="キーワードを入力" class="search-input">
+                <button type="submit" class="search-button">検索</button>
+            </form>
+        </section>
+
+        <section class="sidebar-section">
+            <div class="ranking-header">
+                <h2 class="sidebar-title">人気ハメ撮りランキング</h2>
+            </div>
+            <p class="ranking-note"></p>
+
+            {% if popular_posts %}
+                <div class="ranking-list">
+                    {% for p in popular_posts %}
+                    <a href="{% url 'post_detail' p.cid %}" class="ranking-item">
+                        <div class="ranking-thumb">
+                            <img src="/media/{{ p.cid }}_01.jpg"
+                                 alt="{{ p.name|default:p.title }}"
+                                 loading="lazy" referrerpolicy="no-referrer">
+                        </div>
+                        <div class="ranking-meta">
+                            <div class="ranking-position">{{ forloop.counter }} 位</div>
+                            <p class="ranking-title">
+                                {% if p.name %}
+                                    {{ p.name }}{% if p.age %}({{ p.age }}){% endif %}
+                                {% else %}
+                                    {{ p.title }}
+                                {% endif %}
+                            </p>
+                            {% with src=p.review|default:p.review_body %}
+                                {% if src %}
+                                    <p class="ranking-excerpt">
+                                        {{ src|review_excerpt:38 }}・・・
+                                    </p>
+                                {% endif %}
+                            {% endwith %}
+                        </div>
+                    </a>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <p class="ranking-note">まだ人気記事がありません。</p>
+            {% endif %}
+        </section>
+    </aside>
+</div>
+</body>
+</html>

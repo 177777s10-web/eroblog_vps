@@ -1,0 +1,206 @@
+{% load post_filters %}
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta name="description" content="最新の素人ハメ撮り動画を、マニア向けに見やすくまとめたレビューサイトです。素人好きの30〜40代男性が楽しめる大興奮の厳選素人ハメ撮りを分かりやすく紹介します。">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% if genre_main %}
+            {{ genre_main }} の素人ハメ撮りレビュー一覧
+        {% else %}
+            素人ハメ撮りレビュー一覧
+        {% endif %}
+    </title>
+    <meta name="description" content="{% if genre_main %}「{{ genre_main }}」に関連する素人ハメ撮り作品のレビュー一覧です。気になる作品をクリックすると、詳細レビューへ移動します。{% else %}取得済みデータから自動生成された素人ハメ撮りレビューの一覧です。気になる作品をクリックすると、詳細レビューへ移動します。{% endif %}">
+
+    <style>
+        :root {
+            --primary-color: #ff4081;
+            --secondary-color: #f50057;
+            --text-color: #333;
+            --bg-color: #fff;
+            --border-color: #eee;
+        }
+        body {
+            margin: 0;
+            padding: 24px 12px 40px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #fafafa;
+            color: var(--text-color);
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 1.7em;
+            margin: 0 0 0.3em;
+        }
+        .lead {
+            margin: 0 0 1.5em;
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        /* カードレイアウト */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 32px;
+        }
+        .card {
+            display: block;
+            background: #fff;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            text-decoration: none;
+            color: inherit;
+            overflow: hidden;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.04);
+            transition: transform 0.1s, box-shadow 0.1s;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+        }
+        .thumb {
+            width: 100%;
+            height: 190px;
+            overflow: hidden;
+        }
+        .thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .card-body {
+            padding: 10px 12px 12px;
+        }
+        .card-title {
+            font-size: 1em;
+            font-weight: bold;
+            margin: 0 0 0.4em;
+            color: var(--secondary-color);
+        }
+        .card-sizes {
+            margin-left: 0.4em;
+            font-weight: normal;
+            color: #e91e63;
+            font-size: 0.95em;
+        }
+        .card-excerpt {
+            margin-top: 6px;
+            font-size: 13px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* レスポンシブ */
+        @media (max-width: 1024px) {
+            .card-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+        @media (max-width: 640px) {
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ページャー */
+        .pagination {
+            margin-top: 32px;
+            text-align: center;
+            font-size: 0.95em;
+        }
+        .pagination .page-current {
+            margin: 0 12px;
+        }
+        .pagination .page-link {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 999px;
+            border: 1px solid var(--border-color);
+            text-decoration: none;
+            color: var(--text-color);
+            background: #fff;
+        }
+        .pagination .page-link:hover {
+            border-color: var(--secondary-color);
+            color: var(--secondary-color);
+        }
+
+        .empty-message {
+            margin-top: 24px;
+            font-size: 0.95em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    {% if genre_main %}
+        <h1>{{ genre_main }} の素人ハメ撮りレビュー一覧</h1>
+        <p class="lead">「{{ genre_main }}」に関連する素人ハメ撮り作品のレビュー一覧です。気になる作品をクリックすると、詳細レビューへ移動します。</p>
+    {% else %}
+        <h1>素人ハメ撮りレビュー一覧</h1>
+        <p class="lead">取得済みデータから自動生成された素人ハメ撮りレビューの一覧です。気になる作品をクリックすると、詳細レビューへ移動します。</p>
+    {% endif %}
+
+    {% if posts %}
+        <div class="card-grid">
+            {% for post in posts %}
+            <a href="{% url 'post_detail' post.cid %}" class="card">
+                <div class="thumb">
+                    <img src="/media/{{ post.cid }}_01.jpg"
+                         alt="{{ post.name|default:post.title }}"
+                         loading="lazy" referrerpolicy="no-referrer">
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title">
+                        {% if post.name %}
+                            {{ post.name }}{% if post.age %}({{ post.age }}){% endif %}
+                        {% else %}
+                            {{ post.title }}
+                        {% endif %}
+                        {% if post.sizes %}
+                            <span class="card-sizes">{{ post.sizes }}</span>
+                        {% elif post.bust and post.waist and post.hip %}
+                            <span class="card-sizes">B{{ post.bust }} W{{ post.waist }} H{{ post.hip }}</span>
+                        {% endif %}
+                    </h2>
+
+                    {# レビュー or review_body から、62文字ぶんの抜粋だけ表示 #}
+                    {% with src=post.review|default:post.review_body %}
+                        {% if src %}
+                            <p class="card-excerpt">
+                                {{ src|review_excerpt:62 }}・・・
+                            </p>
+                        {% endif %}
+                    {% endwith %}
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+
+        {% if page_obj %}
+        <div class="pagination">
+            {% if page_obj.has_previous %}
+                <a href="?page={{ page_obj.previous_page_number }}" class="page-link prev">前へ</a>
+            {% endif %}
+            <span class="page-current">
+                {{ page_obj.number }} / {{ page_obj.paginator.num_pages }}
+            </span>
+            {% if page_obj.has_next %}
+                <a href="?page={{ page_obj.next_page_number }}" class="page-link next">次へ</a>
+            {% endif %}
+        </div>
+        {% endif %}
+    {% else %}
+        <p class="empty-message">該当するレビューがまだありません。</p>
+    {% endif %}
+</div>
+</body>
+</html>
