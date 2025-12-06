@@ -2561,3 +2561,21 @@ RuntimeError: cmd failed: /home/shinya/eroblog_project_GPT/.venv/bin/python fanz
 [DOWNLOAD] Asset check for zake010 complete.
 [OK] merged: zake010 images=0 review_len=1120
 [DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: fcz013
+[OK] daily appended: 20251206.jsonl fcz013
+[RUN] CID=fcz013
+[DOWNLOAD] Checking assets for fcz013...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/fcz013/fcz013jm.jpg
+  Saved poster: fcz013_poster.jpg
+[DOWNLOAD] Asset check for fcz013 complete.
+[OK] merged: fcz013 images=0 review_len=334
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
+[OK] history appended: nost156
+[OK] daily appended: 20251206.jsonl nost156
+[RUN] CID=nost156
+[DOWNLOAD] Checking assets for nost156...
+  Downloading: https://pics.dmm.co.jp/digital/amateur/nost156/nost156jm.jpg
+  Saved poster: nost156_poster.jpg
+[DOWNLOAD] Asset check for nost156 complete.
+[OK] merged: nost156 images=0 review_len=128
+[DONE] JSONL: /home/shinya/eroblog/data_getter/out/videoc_latest_enriched.jsonl  CSV: /home/shinya/eroblog/data_getter/out/videoc_latest.csv  HIST: /home/shinya/eroblog/data_getter/out/processed_cids.txt
