@@ -1,27 +1,12 @@
-"""
-Django settings for blog_builder project.
-"""
-
 from pathlib import Path
-import os # Geminiが追記
+import os
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-dummy-key-for-development' # 仮のキー
-
-# SECURITY WARNING: don't run with debug turned on in production!
+SECRET_KEY = 'change-me-in-production-xxxxxxxxxxxxxxxxxxxx'
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
-
-# Application definition
+ALLOWED_HOSTS = ['163.44.115.192', '127.0.0.1', 'localhost']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -30,7 +15,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'posts', # 1. 'posts' アプリを登録 (Gemini)
+    'posts',
 ]
 
 MIDDLEWARE = [
@@ -48,10 +33,7 @@ ROOT_URLCONF = 'blog_builder.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [
-            # 2. デザインの型紙（.html）が置いてある場所 (Gemini修正版)
-            os.path.join(BASE_DIR, '..', 'content', 'templates')
-        ],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -66,8 +48,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'blog_builder.wsgi.application'
 
-
-# Database
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -75,33 +55,20 @@ DATABASES = {
     }
 }
 
-# Password validation
-AUTH_PASSWORD_VALIDATORS = [
-    {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',},
-    {'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',},
-    {'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',},
-    {'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',},
-]
+AUTH_PASSWORD_VALIDATORS = []
 
-
-# Internationalization
 LANGUAGE_CODE = 'ja'
 TIME_ZONE = 'Asia/Tokyo'
 USE_I18N = True
 USE_TZ = True
 
-
-# Static files (CSS, JavaScript, Images)
 STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+]
 
-# 3. 画像（assets）を /media/assets/ として配信するための設定 (Gemini修正版)
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, '..', 'content', 'assets')
+MEDIA_ROOT = BASE_DIR / 'media'
 
-
-# Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-# Media files (User-uploaded content)
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / '..' / 'content' / 'assets'
