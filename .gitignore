@@ -1,0 +1,6 @@
+
+# ignore venv & local runtime
+blog_builder/.venv/
+blog_builder/media/
+__pycache__/
+*.pyc
