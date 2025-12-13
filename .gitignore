@@ -4,3 +4,6 @@ blog_builder/.venv/
 blog_builder/media/
 __pycache__/
 *.pyc
+blog_builder/db.sqlite3
+blog_builder/runserver.log
+blog_builder/posts/templates/post_detail_template.html
