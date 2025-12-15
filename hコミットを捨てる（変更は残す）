@@ -1,0 +1,51 @@
+Binary file __pycache__/run.cpython-312.pyc matches
+api/fetch_by_cid.py[36m:[m7[36m:[m    aid = os.environ.get("[1;31mAPI_ID[m") or os.environ.get("DMM_[1;31mAPI_ID[m")
+api/fetch_by_cid.py[36m:[m8[36m:[m    aff = os.environ.get("[1;31mAFFILIATE_ID[m") or os.environ.get("DMM_[1;31mAFFILIATE_ID[m")
+api/fetch_by_cid.py[36m:[m10[36m:[m        print("[ERR] [1;31mAPI_ID[m / [1;31mAFFILIATE_ID[m が未設定", file=sys.stderr)
+config/.env.example[36m:[m1[36m:[m[1;31mAPI_ID[m=xxxxxxxxxxxxxxxx
+config/.env.example[36m:[m2[36m:[m[1;31mAFFILIATE_ID[m=your-affiliate
+data_getter/blog_videoc_today.py[36m:[m8[36m:[m    if os.environ.get("[1;31mAPI_ID[m") and os.environ.get("[1;31mAFFILIATE_ID[m"):
+data_getter/blog_videoc_today.py[36m:[m28[36m:[m            os.environ.setdefault("[1;31mAPI_ID[m", api_id)
+data_getter/blog_videoc_today.py[36m:[m29[36m:[m            os.environ.setdefault("[1;31mAFFILIATE_ID[m", aff_id)
+data_getter/blog_videoc_today.py[36m:[m31[36m:[m            print("[WARN] SiteSettings から [1;31mAPI_ID[m/[1;31mAFFILIATE_ID[m を取得できませんでした")
+data_getter/blog_videoc_today.py[36m:[m238[36m:[m        os.environ.get("[1;31mAPI_ID[m")
+data_getter/blog_videoc_today.py[36m:[m239[36m:[m        or os.environ.get("DMM_[1;31mAPI_ID[m")
+data_getter/blog_videoc_today.py[36m:[m243[36m:[m        os.environ.get("[1;31mAFFILIATE_ID[m")
+data_getter/blog_videoc_today.py[36m:[m244[36m:[m        or os.environ.get("DMM_[1;31mAFFILIATE_ID[m")
+data_getter/blog_videoc_today.py[36m:[m248[36m:[m        raise RuntimeError("APIキー未設定([1;31mAPI_ID[m/[1;31mAFFILIATE_ID[m)")
+data_getter/blog_videoc_today.py.bak.20251110-203913[36m:[m101[36m:[m    aid = os.environ.get("[1;31mAPI_ID[m") or os.environ.get("DMM_[1;31mAPI_ID[m") or "nAguP939XQHSFhANAPC9"
+data_getter/blog_videoc_today.py.bak.20251110-203913[36m:[m102[36m:[m    aff = os.environ.get("[1;31mAFFILIATE_ID[m") or os.environ.get("DMM_[1;31mAFFILIATE_ID[m") or "shinya39-995"
+data_getter/blog_videoc_today.py.bak.20251110-203913[36m:[m103[36m:[m    if not aid or not aff: raise RuntimeError("APIキー未設定([1;31mAPI_ID[m/[1;31mAFFILIATE_ID[m)")
+data_getter/blog_videoc_today.py.bak.20251110-204401[36m:[m117[36m:[m    aid = os.environ.get("[1;31mAPI_ID[m") or os.environ.get("DMM_[1;31mAPI_ID[m") or "nAguP939XQHSFhANAPC9"
+data_getter/blog_videoc_today.py.bak.20251110-204401[36m:[m118[36m:[m    aff = os.environ.get("[1;31mAFFILIATE_ID[m") or os.environ.get("DMM_[1;31mAFFILIATE_ID[m") or "shinya39-995"
+data_getter/blog_videoc_today.py.bak.20251110-204401[36m:[m119[36m:[m    if not aid or not aff: raise RuntimeError("APIキー未設定([1;31mAPI_ID[m/[1;31mAFFILIATE_ID[m)")
+data_getter/blog_videoc_today.py.bak.20251110-204646[36m:[m107[36m:[m    aid = os.environ.get("[1;31mAPI_ID[m") or os.environ.get("DMM_[1;31mAPI_ID[m") or "nAguP939XQHSFhANAPC9"
+data_getter/blog_videoc_today.py.bak.20251110-204646[36m:[m108[36m:[m    aff = os.environ.get("[1;31mAFFILIATE_ID[m") or os.environ.get("DMM_[1;31mAFFILIATE_ID[m") or "shinya39-995"
+data_getter/blog_videoc_today.py.bak.20251110-204646[36m:[m109[36m:[m    if not aid or not aff: raise RuntimeError("APIキー未設定([1;31mAPI_ID[m/[1;31mAFFILIATE_ID[m)")
+data_getter/blog_videoc_today.py.bak.20251110-204903[36m:[m107[36m:[m    aid = os.environ.get("[1;31mAPI_ID[m") or os.environ.get("DMM_[1;31mAPI_ID[m") or "nAguP939XQHSFhANAPC9"
+data_getter/blog_videoc_today.py.bak.20251110-204903[36m:[m108[36m:[m    aff = os.environ.get("[1;31mAFFILIATE_ID[m") or os.environ.get("DMM_[1;31mAFFILIATE_ID[m") or "shinya39-995"
+data_getter/blog_videoc_today.py.bak.20251110-204903[36m:[m109[36m:[m    if not aid or not aff: raise RuntimeError("APIキー未設定([1;31mAPI_ID[m/[1;31mAFFILIATE_ID[m)")
+data_getter/blog_videoc_today.py.bak.20251110-205428[36m:[m107[36m:[m    aid = os.environ.get("[1;31mAPI_ID[m") or os.environ.get("DMM_[1;31mAPI_ID[m") or "nAguP939XQHSFhANAPC9"
+data_getter/blog_videoc_today.py.bak.20251110-205428[36m:[m108[36m:[m    aff = os.environ.get("[1;31mAFFILIATE_ID[m") or os.environ.get("DMM_[1;31mAFFILIATE_ID[m") or "shinya39-995"
+data_getter/blog_videoc_today.py.bak.20251110-205428[36m:[m109[36m:[m    if not aid or not aff: raise RuntimeError("APIキー未設定([1;31mAPI_ID[m/[1;31mAFFILIATE_ID[m)")
+data_getter/fanza/api_fetch_by_cid.py[36m:[m7[36m:[m    aid = os.environ.get("[1;31mAPI_ID[m") or os.environ.get("DMM_[1;31mAPI_ID[m")
+data_getter/fanza/api_fetch_by_cid.py[36m:[m8[36m:[m    aff = os.environ.get("[1;31mAFFILIATE_ID[m") or os.environ.get("DMM_[1;31mAFFILIATE_ID[m")
+data_getter/fanza/api_fetch_by_cid.py[36m:[m10[36m:[m        print("[ERR] [1;31mAPI_ID[m / [1;31mAFFILIATE_ID[m が未設定", file=sys.stderr)
+data_getter/logs/cron_data_getter.log[36m:[m14[36m:[m[ERR] [1;31mAPI_ID[m / [1;31mAFFILIATE_ID[m が未設定
+data_getter/logs/cron_data_getter.log[36m:[m29[36m:[m[ERR] [1;31mAPI_ID[m / [1;31mAFFILIATE_ID[m が未設定
+data_getter/logs/cron_data_getter.log[36m:[m44[36m:[m[ERR] [1;31mAPI_ID[m / [1;31mAFFILIATE_ID[m が未設定
+data_getter/logs/cron_data_getter.log[36m:[m59[36m:[m[ERR] [1;31mAPI_ID[m / [1;31mAFFILIATE_ID[m が未設定
+data_getter/logs/cron_data_getter.log[36m:[m74[36m:[m[ERR] [1;31mAPI_ID[m / [1;31mAFFILIATE_ID[m が未設定
+data_getter/logs/cron_data_getter.log[36m:[m89[36m:[m[ERR] [1;31mAPI_ID[m / [1;31mAFFILIATE_ID[m が未設定
+data_getter/logs/cron_data_getter.log[36m:[m104[36m:[m[ERR] [1;31mAPI_ID[m / [1;31mAFFILIATE_ID[m が未設定
+data_getter/run.py[36m:[m20[36m:[m    aid = os.environ.get("[1;31mAPI_ID[m") or "nAguP939XQHSFhANAPC9"
+data_getter/run.py[36m:[m21[36m:[m    aff = os.environ.get("[1;31mAFFILIATE_ID[m") or "shinya39-995"
+data_getter/run_hourly.sh[36m:[m5[36m:[m[1;31mAPI_ID[m="${[1;31mAPI_ID[m:-nAguP939XQHSFhANAPC9}" \
+data_getter/run_hourly.sh[36m:[m6[36m:[m[1;31mAFFILIATE_ID[m="${[1;31mAFFILIATE_ID[m:-shinya39-995}" \
+run.py.bak.20251108-170135[36m:[m20[36m:[m    aid = os.environ.get("[1;31mAPI_ID[m") or "nAguP939XQHSFhANAPC9"
+run.py.bak.20251108-170135[36m:[m21[36m:[m    aff = os.environ.get("[1;31mAFFILIATE_ID[m") or "shinya39-995"
+run.py.bak.20251108-170633[36m:[m20[36m:[m    aid = os.environ.get("[1;31mAPI_ID[m") or "nAguP939XQHSFhANAPC9"
+run.py.bak.20251108-170633[36m:[m21[36m:[m    aff = os.environ.get("[1;31mAFFILIATE_ID[m") or "shinya39-995"
+run.py.bak.20251108-171233[36m:[m20[36m:[m    aid = os.environ.get("[1;31mAPI_ID[m") or "nAguP939XQHSFhANAPC9"
+run.py.bak.20251108-171233[36m:[m21[36m:[m    aff = os.environ.get("[1;31mAFFILIATE_ID[m") or "shinya39-995"
+scripts/eroblog_hourly.sh[36m:[m7[36m:[mecho "[env] [1;31mAPI_ID[m=${[1;31mAPI_ID[m:+SET} [1;31mAFFILIATE_ID[m=${[1;31mAFFILIATE_ID[m:+SET}"

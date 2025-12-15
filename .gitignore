@@ -1,4 +1,3 @@
-
 # ignore venv & local runtime
 blog_builder/.venv/
 blog_builder/media/
@@ -7,3 +6,17 @@ __pycache__/
 blog_builder/db.sqlite3
 blog_builder/runserver.log
 blog_builder/posts/templates/post_detail_template.html
+blog_builder/db.sqlite3-journal
+
+# --- eroblog generated outputs ---
+data_getter/out/
+data_getter/logs/
+blog_builder/staticfiles/
+
+# --- generated / local-only ---
+**/.venv/
+data_getter/out/
+data_getter/logs/
+blog_builder/staticfiles/
+.env
+*.env
