@@ -43,3 +43,23 @@ blog_builder/staticfiles/
 *.pyc
 .env
 *.env
+
+# --- python junk ---
+__pycache__/
+*.pyc
+
+# --- backups (鍵が混ざる) ---
+*.bak*
+*.bak.*
+
+# --- venv ---
+**/.venv/
+
+# --- generated outputs/logs/static collect ---
+data_getter/out/
+data_getter/logs/
+blog_builder/staticfiles/
+
+# --- secrets ---
+.env
+*.env
