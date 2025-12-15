@@ -33,3 +33,13 @@ data_getter/logs/
 blog_builder/staticfiles/
 .env
 *.env
+
+# --- generated / local-only ---
+**/.venv/
+data_getter/out/
+data_getter/logs/
+blog_builder/staticfiles/
+**/__pycache__/
+*.pyc
+.env
+*.env
