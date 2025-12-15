@@ -20,3 +20,16 @@ data_getter/logs/
 blog_builder/staticfiles/
 .env
 *.env
+
+# --- local / generated ---
+**/.venv/
+**/__pycache__/
+*.pyc
+*.log
+*.bak
+*.bak.*
+data_getter/out/
+data_getter/logs/
+blog_builder/staticfiles/
+.env
+*.env
