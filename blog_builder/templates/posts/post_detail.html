@@ -14,7 +14,7 @@
     </title>
 
     {# メタ説明文：review_html → review → description の優先順位 #}
-    {% with desc=post.review_html|default:post.review|default:post.description %}
+    {% with desc=post.review|default:post.review_body %}
         <meta name="description" content="{{ desc|striptags }}">
         <meta property="og:description" content="{{ desc|striptags }}">
         <meta name="twitter:description" content="{{ desc|striptags }}">
@@ -23,21 +23,21 @@
     <meta property="og:title" content="{{ post.name|default:post.title }}｜{{ post.cid }}">
     <meta property="og:type" content="article">
     <meta property="og:url" content="{{ request.build_absolute_uri }}">
-    <meta property="og:image" content="{{ post.poster_url }}">
+    <meta property="og:image" content="/media/{{ post.cid }}_poster.jpg">
     <meta property="og:site_name" content="素人ハメ撮りレビュー">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ post.name|default:post.title }}｜{{ post.cid }}">
-    <meta name="twitter:image" content="{{ post.poster_url }}">
+    <meta name="twitter:image" content="/media/{{ post.cid }}_poster.jpg">
 
     {# 構造化データ Article #}
-    {% with desc=post.review_html|default:post.review|default:post.description %}
+    {% with desc=post.review|default:post.review_body %}
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": "{{ post.name|default:post.title }}｜{{ post.cid }}",
-      "image": ["{{ post.poster_url }}"],
+      "image": ["/media/{{ post.cid }}_poster.jpg"],
       "author": {
         "@type": "Person",
         "name": "管理人"
@@ -431,7 +431,7 @@
             </div>
         </div>
 
-        {% with hero=post.sample_images|first|default:post.poster_url %}
+        {% with hero=''|first|default:post.cid %}
         <div id="video-player" class="video-container" data-movie-url="{{ post.sample_movie_url }}">
             <img src="{{ hero }}" alt="作品のメイン画像" loading="lazy" referrerpolicy="no-referrer">
             <div class="play-button"></div>
@@ -444,12 +444,12 @@
     </h2>
 
     <div class="review-body" style="font-size:1.05em; line-height:1.9;">
-        {% if post.review_html %}
-            {{ post.review_html|safe }}
+        {% if post.review %}
+            {{ post.review|safe }}
         {% elif post.review %}
             <p>{{ post.review }}</p>
-        {% elif post.description %}
-            <p>{{ post.description }}</p>
+        {% elif post.review_body %}
+            <p>{{ post.review_body }}</p>
         {% else %}
             <p>レビュー情報はありません。</p>
         {% endif %}
@@ -458,9 +458,7 @@
 
     <a href="{{ post.affiliate_url }}" rel="nofollow sponsored" class="summary-link-wrapper">
         <section class="summary-block">
-            {% with thumb=post.sample_images.1|default:post.poster_url %}
-                <img src="{{ thumb }}" alt="{{ post.name|default:post.title }} サムネイル" loading="lazy" referrerpolicy="no-referrer">
-            {% endwith %}
+            <img src="/media/{{ post.cid }}_01.jpg" alt="{{ post.name|default:post.title }} サムネイル" loading="lazy" referrerpolicy="no-referrer">
 
             <div class="summary-block-content">
                 <h3>
@@ -486,12 +484,12 @@
 </div>
 
 <div class="lead-main">
-    {% if post.review_html %}
-        {{ post.review_html|safe }}
+    {% if post.review %}
+        {{ post.review|safe }}
     {% elif post.review %}
         <p>{{ post.review }}</p>
-    {% elif post.description %}
-        <p>{{ post.description }}</p>
+    {% elif post.review_body %}
+        <p>{{ post.review_body }}</p>
     {% endif %}
 </div>
 
@@ -506,12 +504,12 @@
     </h2>
 
     <div class="review-body" style="font-size:1.05em; line-height:1.9;">
-        {% if post.review_html %}
-            {{ post.review_html|safe }}
+        {% if post.review %}
+            {{ post.review|safe }}
         {% elif post.review %}
             <p>{{ post.review }}</p>
-        {% elif post.description %}
-            <p>{{ post.description }}</p>
+        {% elif post.review_body %}
+            <p>{{ post.review_body }}</p>
         {% else %}
             <p>レビュー情報はありません。</p>
         {% endif %}
@@ -530,12 +528,12 @@
     </h2>
 
     <div class="review-body" style="font-size:1.05em; line-height:1.9;">
-        {% if post.review_html %}
-            {{ post.review_html|safe }}
+        {% if post.review %}
+            {{ post.review|safe }}
         {% elif post.review %}
             <p>{{ post.review }}</p>
-        {% elif post.description %}
-            <p>{{ post.description }}</p>
+        {% elif post.review_body %}
+            <p>{{ post.review_body }}</p>
         {% else %}
             <p>レビュー情報はありません。</p>
         {% endif %}
@@ -546,7 +544,7 @@
         <h2>サンプルギャラリー</h2>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-                {% for img in post.sample_images %}
+                {% for img in '' %}
                     <div class="swiper-slide">
                         <img src="{{ img }}" alt="サンプル画像 {{ forloop.counter }}" loading="lazy" referrerpolicy="no-referrer">
                     </div>
@@ -563,12 +561,12 @@
     </h2>
 
     <div class="review-body" style="font-size:1.05em; line-height:1.9;">
-        {% if post.review_html %}
-            {{ post.review_html|safe }}
+        {% if post.review %}
+            {{ post.review|safe }}
         {% elif post.review %}
             <p>{{ post.review }}</p>
-        {% elif post.description %}
-            <p>{{ post.description }}</p>
+        {% elif post.review_body %}
+            <p>{{ post.review_body }}</p>
         {% else %}
             <p>レビュー情報はありません。</p>
         {% endif %}
@@ -586,12 +584,12 @@
     </h2>
 
     <div class="review-body" style="font-size:1.05em; line-height:1.9;">
-        {% if post.review_html %}
-            {{ post.review_html|safe }}
+        {% if post.review %}
+            {{ post.review|safe }}
         {% elif post.review %}
             <p>{{ post.review }}</p>
-        {% elif post.description %}
-            <p>{{ post.description }}</p>
+        {% elif post.review_body %}
+            <p>{{ post.review_body }}</p>
         {% else %}
             <p>レビュー情報はありません。</p>
         {% endif %}
@@ -604,7 +602,7 @@
             <dt>タイトル</dt><dd>{{ post.name|default:post.title }}</dd>
             <dt>メーカー</dt><dd>{{ post.maker }}</dd>
             <dt>品番</dt><dd>{{ post.cid }}</dd>
-            <dt>ジャンル</dt><dd>{{ post.genres_display }}</dd>
+            <dt>ジャンル</dt><dd>{% if post.genres %}{{ post.genres|join:" / " }}{% else %}-{% endif %}</dd>
         </div>
     </section>
 <section class="full-review" style="margin-top:2em;">
@@ -613,12 +611,12 @@
     </h2>
 
     <div class="review-body" style="font-size:1.05em; line-height:1.9;">
-        {% if post.review_html %}
-            {{ post.review_html|safe }}
+        {% if post.review %}
+            {{ post.review|safe }}
         {% elif post.review %}
             <p>{{ post.review }}</p>
-        {% elif post.description %}
-            <p>{{ post.description }}</p>
+        {% elif post.review_body %}
+            <p>{{ post.review_body }}</p>
         {% else %}
             <p>レビュー情報はありません。</p>
         {% endif %}
@@ -627,7 +625,7 @@
 
     <section class="package-link-section">
         <a href="{{ post.affiliate_url }}" rel="nofollow sponsored" class="package-link">
-            <img src="{{ post.poster_url }}" alt="{{ post.name|default:post.title }} パッケージ画像">
+            <img src="/media/{{ post.cid }}_poster.jpg" alt="{{ post.name|default:post.title }} パッケージ画像">
             <p>▶▶ この作品を今すぐ見る ▶▶</p>
         </a>
     </section>
@@ -637,12 +635,12 @@
     </h2>
 
     <div class="review-body" style="font-size:1.05em; line-height:1.9;">
-        {% if post.review_html %}
-            {{ post.review_html|safe }}
+        {% if post.review %}
+            {{ post.review|safe }}
         {% elif post.review %}
             <p>{{ post.review }}</p>
-        {% elif post.description %}
-            <p>{{ post.description }}</p>
+        {% elif post.review_body %}
+            <p>{{ post.review_body }}</p>
         {% else %}
             <p>レビュー情報はありません。</p>
         {% endif %}
@@ -655,8 +653,8 @@
             <div class="card-grid">
                 {% for r in related_by_maker %}
                     <a href="{{ r.get_absolute_url }}" class="related-card">
-                        {% with img=r.sample_images|first|default:r.poster_url %}
-                            <img src="{{ img }}" alt="{{ r.name|default:r.title }} サムネイル" loading="lazy" referrerpolicy="no-referrer">
+                        {% with img=''|first|default:r.poster_url %}
+                            <img src="/media/{{ post.cid }}_01.jpg" alt="{{ r.name|default:r.title }} サムネイル" loading="lazy" referrerpolicy="no-referrer">
                         {% endwith %}
                         <div class="related-card-title">{{ r.name|default:r.title }}</div>
                         <div>{{ r.cid }}</div>
@@ -670,12 +668,12 @@
     </h2>
 
     <div class="review-body" style="font-size:1.05em; line-height:1.9;">
-        {% if post.review_html %}
-            {{ post.review_html|safe }}
+        {% if post.review %}
+            {{ post.review|safe }}
         {% elif post.review %}
             <p>{{ post.review }}</p>
-        {% elif post.description %}
-            <p>{{ post.description }}</p>
+        {% elif post.review_body %}
+            <p>{{ post.review_body }}</p>
         {% else %}
             <p>レビュー情報はありません。</p>
         {% endif %}
@@ -691,8 +689,8 @@
                 <div class="card-grid">
                     {% for r in group.posts %}
                         <a href="{{ r.get_absolute_url }}" class="related-card">
-                            {% with img=r.sample_images|first|default:r.poster_url %}
-                                <img src="{{ img }}" alt="{{ r.name|default:r.title }} サムネイル" loading="lazy" referrerpolicy="no-referrer">
+                            {% with img=''|first|default:r.poster_url %}
+                                <img src="/media/{{ post.cid }}_01.jpg" alt="{{ r.name|default:r.title }} サムネイル" loading="lazy" referrerpolicy="no-referrer">
                             {% endwith %}
                             <div class="related-card-title">{{ r.name|default:r.title }}</div>
                             <div>{{ r.cid }}</div>
@@ -707,12 +705,12 @@
     </h2>
 
     <div class="review-body" style="font-size:1.05em; line-height:1.9;">
-        {% if post.review_html %}
-            {{ post.review_html|safe }}
+        {% if post.review %}
+            {{ post.review|safe }}
         {% elif post.review %}
             <p>{{ post.review }}</p>
-        {% elif post.description %}
-            <p>{{ post.description }}</p>
+        {% elif post.review_body %}
+            <p>{{ post.review_body }}</p>
         {% else %}
             <p>レビュー情報はありません。</p>
         {% endif %}

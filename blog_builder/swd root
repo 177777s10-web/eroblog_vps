@@ -1,0 +1,14 @@
+[0;1;34m# /etc/systemd/system/eroblog.service[0m
+[Unit]
+Description=eroblog Django (runserver)
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/root/eroblog/blog_builder
+ExecStart=/root/eroblog/blog_builder/.venv/bin/python /root/eroblog/blog_builder/manage.py runserver 0.0.0.0:8000 --noreload
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
