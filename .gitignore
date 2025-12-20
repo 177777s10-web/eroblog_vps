@@ -1,65 +1,44 @@
-# ignore venv & local runtime
-blog_builder/.venv/
-blog_builder/media/
-__pycache__/
-*.pyc
+# ===== Python / Django =====
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.log
+**/*.pid
+
+# venv
+**/.venv/
+**/venv/
+
+# DB (generated)
+**/*.sqlite3
 blog_builder/db.sqlite3
-blog_builder/runserver.log
-blog_builder/posts/templates/post_detail_template.html
-blog_builder/db.sqlite3-journal
+db.sqlite3
 
-# --- eroblog generated outputs ---
+# Django media (generated)
+blog_builder/media/
+media/
+
+# data_getter outputs/logs/items (generated)
 data_getter/out/
 data_getter/logs/
-blog_builder/staticfiles/
 
-# --- generated / local-only ---
-**/.venv/
-data_getter/out/
-data_getter/logs/
-blog_builder/staticfiles/
-.env
-*.env
+# content generated (generated)
+content/assets/
+content/exports/
 
-# --- local / generated ---
-**/.venv/
-**/__pycache__/
-*.pyc
-*.log
-*.bak
-*.bak.*
-data_getter/out/
-data_getter/logs/
-blog_builder/staticfiles/
-.env
-*.env
+# oneoff / backups (do not commit)
+blog_builder/oneoff_backups/
+**/*.orig
+**/*.rej
+**/*.patch
+**/*.bak*
 
-# --- generated / local-only ---
-**/.venv/
-data_getter/out/
-data_getter/logs/
-blog_builder/staticfiles/
-**/__pycache__/
-*.pyc
-.env
-*.env
-
-# --- python junk ---
-__pycache__/
-*.pyc
-
-# --- backups (鍵が混ざる) ---
-*.bak*
-*.bak.*
-
-# --- venv ---
-**/.venv/
-
-# --- generated outputs/logs/static collect ---
-data_getter/out/
-data_getter/logs/
-blog_builder/staticfiles/
-
-# --- secrets ---
-.env
-*.env
+# accidental garbage files (observed)
+blog_builder/1
+blog_builder/et
+blog_builder/hell
+blog_builder/tname
+blog_builder/swd root
+blog_builder/t.objects.count())
+blog_builder/t.objects.order_by*
+blog_builder/s *
