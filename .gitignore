@@ -2,43 +2,30 @@
 **/__pycache__/
 **/*.pyc
 **/*.pyo
-**/*.log
-**/*.pid
 
 # venv
 **/.venv/
 **/venv/
 
-# DB (generated)
+# logs / temp
+**/*.log
+**/*.pid
+
+# ===== Django runtime generated =====
 **/*.sqlite3
-blog_builder/db.sqlite3
 db.sqlite3
+blog_builder/db.sqlite3
 
-# Django media (generated)
-blog_builder/media/
 media/
+blog_builder/media/
 
-# data_getter outputs/logs/items (generated)
+# collectstatic generated
+blog_builder/staticfiles/
+
+# ===== data_getter generated =====
 data_getter/out/
 data_getter/logs/
 
-# content generated (generated)
+# ===== content generated =====
 content/assets/
 content/exports/
-
-# oneoff / backups (do not commit)
-blog_builder/oneoff_backups/
-**/*.orig
-**/*.rej
-**/*.patch
-**/*.bak*
-
-# accidental garbage files (observed)
-blog_builder/1
-blog_builder/et
-blog_builder/hell
-blog_builder/tname
-blog_builder/swd root
-blog_builder/t.objects.count())
-blog_builder/t.objects.order_by*
-blog_builder/s *
